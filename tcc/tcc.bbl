@@ -1,0 +1,13 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Brand{\~a}o 2016]{Brandao2016}
+\abntrefinfo{Brand{\~a}o}{BRAND{\~A}O}{2016}
+{BRAND{\~A}O, R.~U. \textbf{T\'itulo da obra}: Subt\'itulo da obra. 2. ed.
+  Para\'iso do Tocantins: Nome da Editora, 2016.}
+
+\end{thebibliography}
