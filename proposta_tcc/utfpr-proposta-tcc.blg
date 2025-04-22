@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: utfpr-proposta-tcc.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: estrutura/textuais/proposta-de-tcc.aux
+Reallocating 'name_of_file' (item size: 1) to 45 items.
+A level-1 auxiliary file: estrutura/textuais/descricao-da-proposta.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: estrutura/pos-textuais/referencias.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: ./base-referencias.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 12 entries,
+            6714 wiz_defined-function locations,
+            1248 strings with 10606 characters,
+and the built_in function-call counts, 8650 in all, are:
+= -- 919
+> -- 206
+< -- 98
++ -- 224
+- -- 65
+* -- 544
+:= -- 1121
+add.period$ -- 29
+call.type$ -- 13
+change.case$ -- 87
+chr.to.int$ -- 24
+cite$ -- 6
+duplicate$ -- 517
+empty$ -- 610
+format.name$ -- 296
+if$ -- 2003
+int.to.chr$ -- 6
+int.to.str$ -- 3
+missing$ -- 168
+newline$ -- 35
+num.names$ -- 30
+pop$ -- 178
+preamble$ -- 1
+purify$ -- 43
+quote$ -- 0
+skip$ -- 809
+stack$ -- 1
+substring$ -- 274
+swap$ -- 193
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 41
+width$ -- 0
+write$ -- 103
