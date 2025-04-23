@@ -1,23 +1,23 @@
 # Fdb version 4
-["bibtex utfpr-proposta-tcc"] 1745374005.16095 "utfpr-proposta-tcc.aux" "utfpr-proposta-tcc.bbl" "utfpr-proposta-tcc" 1745374603.4906 0
+["bibtex utfpr-proposta-tcc"] 1745374005.16095 "utfpr-proposta-tcc.aux" "utfpr-proposta-tcc.bbl" "utfpr-proposta-tcc" 1745376483.92894 0
   "./base-referencias.bib" 1745372503.33129 11172 0aca63e70c8ac8955e11c73c46dabc1a ""
   "/home/daniel/.miktex/texmfs/install/bibtex/bib/abntex2/abntex2-options.bib" 1745373741.85577 5396 4eb260dac60f150ae608d45252853090 ""
   "/home/daniel/.miktex/texmfs/install/bibtex/bst/abntex2/abntex2-alf.bst" 1745373741.85977 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "estrutura/pos-textuais/referencias.aux" 1745374602.81 3327 41957d8a5c14459767f5b8af9b27acfd "pdflatex"
-  "estrutura/textuais/descricao-da-proposta.aux" 1745374602.802 6983 cd7450181f878e997189ddb35035f777 "pdflatex"
-  "estrutura/textuais/proposta-de-tcc.aux" 1745374602.726 3160 342b116e925f53df428db0273fea9153 "pdflatex"
-  "utfpr-proposta-tcc.aux" 1745374602.81 6486 5090e335961e142842f6fca5af784227 "pdflatex"
+  "estrutura/pos-textuais/referencias.aux" 1745376483.3571 3327 41957d8a5c14459767f5b8af9b27acfd "pdflatex"
+  "estrutura/textuais/descricao-da-proposta.aux" 1745376483.3491 6983 cd7450181f878e997189ddb35035f777 "pdflatex"
+  "estrutura/textuais/proposta-de-tcc.aux" 1745376483.2811 3160 342b116e925f53df428db0273fea9153 "pdflatex"
+  "utfpr-proposta-tcc.aux" 1745376483.3571 6486 5090e335961e142842f6fca5af784227 "pdflatex"
   (generated)
   "utfpr-proposta-tcc.bbl"
   "utfpr-proposta-tcc.blg"
   (rewritten before read)
-["makeindex utfpr-proposta-tcc.idx"] 1745374001.09152 "utfpr-proposta-tcc.idx" "utfpr-proposta-tcc.ind" "utfpr-proposta-tcc" 1745374603.49037 0
-  "utfpr-proposta-tcc.idx" 1745374602.642 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex utfpr-proposta-tcc.idx"] 1745374001.09152 "utfpr-proposta-tcc.idx" "utfpr-proposta-tcc.ind" "utfpr-proposta-tcc" 1745376483.92878 0
+  "utfpr-proposta-tcc.idx" 1745376483.2131 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "utfpr-proposta-tcc.ilg"
   "utfpr-proposta-tcc.ind"
   (rewritten before read)
-["pdflatex"] 1745374602.19662 "/home/daniel/Codigos/tcc/proposta_tcc/utfpr-proposta-tcc.tex" "utfpr-proposta-tcc.pdf" "utfpr-proposta-tcc" 1745374603.49089 0
+["pdflatex"] 1745376482.83949 "/home/daniel/Codigos/tcc/proposta_tcc/utfpr-proposta-tcc.tex" "utfpr-proposta-tcc.pdf" "utfpr-proposta-tcc" 1745376483.92915 0
   "/home/daniel/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1745374301.67703 124268 0da8841afd596323bdc37ab00e7a1059 ""
   "/home/daniel/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1745373232.83135 9947277 491e9ccbb0e865f924c3ae5756d8443d ""
   "/home/daniel/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm" 1136783054 6672 e3ab9e37e925f3045c9005e6d1473d56 ""
@@ -187,21 +187,21 @@
   "/home/daniel/Codigos/tcc/proposta_tcc/utfpr-proposta-tcc.tex" 1745372503.33529 2090 a4947692f1370b49003cbf8ed02bb8c1 ""
   "configuracoes/configuracoes-pdf.tex" 1745372503.33129 1247 327802d9fe1df813b6430577c0e796de ""
   "configuracoes/pacotes.tex" 1745372503.33129 3430 8fa8ecae04f48c2b744558bf43da7168 ""
-  "configuracoes/utfpr-abntex2.cls" 1745374601.83399 15560 c5868546a6b9d6e80b3e6113efa015ba ""
+  "configuracoes/utfpr-abntex2.cls" 1745376482.49708 15637 90508083b651892aa3b37d6c6f70324d ""
   "dados/images/latex-logo.png" 1745372503.33129 35136 8cfeb42213f2bde589ecb43e4c69701d ""
   "dados/quadros/quadro1.tex" 1745372503.33129 1376 f7a0a0e871e149bbbc700d9fdc104566 ""
   "dados/quadros/quadro2.tex" 1745372503.33129 1445 d6c639379f935897155d757592c7106d ""
-  "estrutura/pos-textuais/referencias.aux" 1745374602.81 3327 41957d8a5c14459767f5b8af9b27acfd "pdflatex"
+  "estrutura/pos-textuais/referencias.aux" 1745376483.3571 3327 41957d8a5c14459767f5b8af9b27acfd "pdflatex"
   "estrutura/pos-textuais/referencias.tex" 1745372503.33129 429 237983d07dd491297a5a733a274350a8 ""
   "estrutura/pre-textuais/capa.tex" 1745374147.83048 2217 956ea65f6b03fe80cdf686bde47adfa6 ""
   "estrutura/pre-textuais/folha-rosto.tex" 1745374464.66372 544 e4cf4c9715ff71930d13f01e81f9ec0b ""
-  "estrutura/textuais/descricao-da-proposta.aux" 1745374602.802 6983 cd7450181f878e997189ddb35035f777 "pdflatex"
+  "estrutura/textuais/descricao-da-proposta.aux" 1745376483.3491 6983 cd7450181f878e997189ddb35035f777 "pdflatex"
   "estrutura/textuais/descricao-da-proposta.tex" 1745372503.33129 13698 3afac424e4e4b301f4f374d86a984844 ""
-  "estrutura/textuais/proposta-de-tcc.aux" 1745374602.726 3160 342b116e925f53df428db0273fea9153 "pdflatex"
+  "estrutura/textuais/proposta-de-tcc.aux" 1745376483.2811 3160 342b116e925f53df428db0273fea9153 "pdflatex"
   "estrutura/textuais/proposta-de-tcc.tex" 1745372503.33129 1997 408d0af7c12a52a400daf497e08c1bea ""
-  "utfpr-proposta-tcc.aux" 1745374602.81 6486 5090e335961e142842f6fca5af784227 "pdflatex"
+  "utfpr-proposta-tcc.aux" 1745376483.3571 6486 5090e335961e142842f6fca5af784227 "pdflatex"
   "utfpr-proposta-tcc.bbl" 1745374005.28412 2009 bb2d1fcace206fd8b901fc3e2dffc6f2 "bibtex utfpr-proposta-tcc"
-  "utfpr-proposta-tcc.brf" 1745374602.814 918 94e473c06c1af69551d0142633df9836 "pdflatex"
+  "utfpr-proposta-tcc.brf" 1745376483.3611 918 94e473c06c1af69551d0142633df9836 "pdflatex"
   "utfpr-proposta-tcc.ind" 1745374001.19206 0 d41d8cd98f00b204e9800998ecf8427e "makeindex utfpr-proposta-tcc.idx"
   "utfpr-proposta-tcc.tex" 1745372503.33529 2090 a4947692f1370b49003cbf8ed02bb8c1 ""
   (generated)

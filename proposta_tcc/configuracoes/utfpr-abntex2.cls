@@ -362,8 +362,9 @@
 
     \begin{center}
 	\begin{SingleSpacing}
-            \large\MakeUppercase{\imprimirlocal}\\
-            \large\MakeUppercase{\imprimirdata}
+            % comentário para remover o campus e a data da folha de rosto
+            %\large\MakeUppercase{\imprimirlocal}\\
+            %\large\MakeUppercase{\imprimirdata}
 	\end{SingleSpacing}
     \end{center}
 
