@@ -12,17 +12,6 @@
 %% Further information about abnTeX2 are available on http://www.abntex.net.br/
 %%------------------------------------------------------------------------------
 
-
-% -----------------------------------------------------------------------------
-% Universidade Tecnológica Federal do Paraná - UTFPR
-%
-% Customização da classe abnTeX2 (http://www.abntex.net.br/) para as normas da UTFPR
-%
-% Projeto: http://tcc.tsi.gp.utfpr.edu.br/paginas/modelos-latex-da-utfpr
-%
-% Autores: Diego Marczal
-% 	       Michael Vornes <https://github.com/mvornes>
-%
 %------------------------------------------------------------------------------
 % Codificação: UTF-8
 % LaTeX:  abnTeX2
@@ -359,16 +348,19 @@
     }
 
     \vspace*{\fill}
-
+    %------------------------------------------------------------
+    % comentado para remover o campus e a data da folha de rosto
+    %------------------------------------------------------------
     \begin{center}
 	\begin{SingleSpacing}
-            % comentário para remover o campus e a data da folha de rosto
-            %\large\MakeUppercase{\imprimirlocal}\\
-            %\large\MakeUppercase{\imprimirdata}
+            \large\MakeUppercase{\imprimirlocal}\\
+            \large\MakeUppercase{\imprimirdata}
 	\end{SingleSpacing}
     \end{center}
 
-
+    %------------------------------------------------------------
+    % comentado para remover a licença da folha de rosto
+    %------------------------------------------------------------
     %\begin{center}
     %    \begin{tabular}{ M{3.2cm} m{12cm} }
     %        \includegraphics[scale=0.8]{./dados/images/by-sa.eps} \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{4.0 Internacional}  &
