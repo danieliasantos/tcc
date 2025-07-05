@@ -7,21 +7,33 @@
 \label{sec:introducao}
 % Introdução-------------------------------------------------------------------------------
 % (máximo de 1 página)
-O Centro Integrado de Operações da Prefeitura de Belo Horizonte (COP-BH), é a entidade municipal responsável pela integração de informações e da atuação das Instituições envolvidas na resposta a problemas públicos de Belo Horizonte. Suas atividades se baseiam no \textit{Modelo de Gestão Integrada} \cite{ModeloGestaoCOP}, documento que expressa o seu posicionamento institucional e como promove a integração, alinhamento e harmonização dos processos de trabalho de diversas Instituições e Agências comprometidas com o cuidado da cidade.
+O Centro Integrado de Operações da Prefeitura de Belo Horizonte (COP-BH), é a entidade municipal responsável pela integração de informações e da atuação das Instituições envolvidas na resposta a problemas públicos de Belo Horizonte. Suas atividades se baseiam no \textit{Modelo de Gestão Integrada do COP-BH} \cite{ModeloGestaoCOP}, que expressa o seu posicionamento institucional e como promove a integração, alinhamento e harmonização dos processos de trabalho de diversas Instituições e Agências comprometidas com o cuidado da cidade.
 
 Pode ser classificado, segundo a Carta Brasileira para Cidades Inteligentes \cite{CartaCidades}, como um ``Centro de Gestão Integrada - GCI'', sendo este um ambiente estratégico que busca melhorar a eficiência e eficácia da prestação de serviços públicos ao aprimorar a proteção social e governança pública.
 
 O COP-BH viabiliza a integração entre as Instituições e Agências por meio de seis linhas de atuação: \textit{Monitoramento da Cidade, Pronta Resposta, Gestão de Crises, Operações Integradas, Gestão de Eventos e Prevenção de Problemas.}
 
-Conforme o Modelo de Gestão Integrada do COP-BH \cite{ModeloGestaoCOP}, esta linha possui três vertentes: o monitoramento de sensores não especialistas, tais como câmeras, o monitoramento de sensores especialistas, tais como os meteorológicos, e o monitoramento de fontes de inteligência. Seu objetivo final é permitir que o COP-BH aja preventivamente a fim de evitar problemas públicos ou monitorar e minorar as suas consequências.
+Conforme o citado modelo \cite{ModeloGestaoCOP}, a linha de atuação de Monitoramento da Cidade possui três vertentes: o monitoramento de sensores não especialistas, tais como câmeras, o monitoramento de sensores especialistas, tais como os meteorológicos, e o monitoramento de fontes de inteligência. Seu objetivo final é permitir que o COP-BH aja preventivamente a fim de evitar problemas públicos ou responder adequadamente a estes, minorando as suas consequências.
 
-Este trabalho analisa e propõe um método de análise de dados para suporte a uma das atividades da linha de atuação de Monitoramento da Cidade, relacionadas ao monitoramento de câmeras, que delinea-se a seguir.
+Este trabalho analisa e propõe uma mudança no método de análise de dados, bem como sua automatização, para suporte a uma das atividades da linha de atuação de Monitoramento da Cidade, relacionadas ao monitoramento de câmeras, que se delinea a seguir.
 
 \subsection{Contextualização do Projeto}
+ 
+Conforme descreve o modelo \cite{ModeloGestaoCOP}, a atividade de monitoramento se utiliza de diversos tipos de sensores para sua consecução. Dentre estes sensores, as câmeras instaladas em locais públicos permitem acesso à visualização de diversos pontos da cidade em tempo real.
 
-Conforme descrito no Modelo de Gestão Integrada do COP-BH \cite{ModeloGestaoCOP}, a atividade de monitoramento se utiliza de diversos tipos de sensores para sua consecução, sendo a principal delas são as câmeras públicas.
+A atividade de monitoramento das câmeras, ou seja, a visualização das suas imagens em tempo real, é realizada por agentes das Instituições que têm assento no ambiente chamado Sala de Controle Integrado, local onde as imagens são acessadas com o propósito de identificar problemas públicos mais rapidamente, a fim de possibilitar maior celeridade também à resposta.
 
-P2. Definição do Problema
+São diversos os tipos de problemas públicos monitorados, tais como a deposição clandestina de lixo ou inservíveis em locais impróprios, animais de grande porte soltos em via pública, pichação, depredação, acidentes de trânsito, invasão de áreas protegidas e furtos de cabos, entre outros.
+
+Para tornar o serviço mais eficiente, o COP-BH desenvolveu um processo de análise de dados sobre problemas públicos para elaborar um roteiro de monitoramento, que sugere os problemas que devem ser monitorados, os períodos de maior relevância para executar o monitoramento e quais as câmeras deveriam ser monitoradas. 
+
+A partir deste roteiro, as equipes de monitoramento teriam um guia de referência que poderia aprimorar o seu trabalho no sentido da eficiência -- pois conheceriam as câmeras com as quais deveriam ter maior foco dentre todas as disponíveis e quando deveriam ser monitoradas, e da eficácia -- pois isso poderia aumentar a probabilidade de visualizar algum problema público durante o monitoramento.
+
+Para fins deste trabalho, o problema público analisado é o furto de cabos. Para isso, foram utilizados dados reais de ocorrências públicas deste problema, e são originados do Sistema de Gestão de Ocorrências Integradas (SICOP Ocorrências), por meio do qual as Instituições e Agências compartilham informações no COP-BH, Sistema de Gestão da Operação (SGO) utilizado pela BHTrans para controle de suas operações, e dados compartilhados pelas operadoras de telefonia Oi, Claro, Vivo e V.tal. O dataset consiste dos seguintes atributos: \texttt{origem, data\_hora, mes\_ano, trimestre\_ano, latitude, longitude, endereco} e \texttt{regional}.
+
+\subsection{Definição do Problema}
+
+A elaboração do roteiro de monitoramento consiste da 
 
 P3. Relevância do Problema
 

@@ -1,0 +1,1424 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.22)  5 JUL 2025 13:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./utfpr-proposta-tcc.tex
+(utfpr-proposta-tcc.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-14>
+(configuracoes/utfpr-abntex2.cls
+Document Class: configuracoes/utfpr-abntex2 2016/07/07 v1.0
+(/home/daniel/.miktex/texmfs/install/tex/latex/abntex2/abntex2.cls
+Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/memoir/memoir.cls
+Document Class: memoir 2025/03/10 v3.8.3b configurable book, report, article do
+cument class
+(/home/daniel/.miktex/texmfs/install/tex/latex/xpatch/xpatch.sty
+(/home/daniel/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-04-14 L3 programming layer (loader) 
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count272
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+(/home/daniel/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count273
+))
+\onelineskip=\skip49
+\lxvchars=\skip50
+\xlvchars=\skip51
+\@memcnta=\count274
+\c@@memmarkcntra=\count275
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\trimtop=\skip52
+\trimedge=\skip53
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/memoir/mem12.clo
+File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
+)
+\binding=\skip54
+\spinemargin=\skip55
+\foremargin=\skip56
+\uppermargin=\skip57
+\lowermargin=\skip58
+\headdrop=\skip59
+\normalrulethickness=\skip60
+\mem@maxheadheight=\skip61
+\mem@maxfootheight=\skip62
+\headwidth=\skip63
+\c@storedpagenumber=\count276
+\memPD=\dimen146
+\m@mabparskip=\skip64
+\thanksmarkwidth=\skip65
+\thanksmarksep=\skip66
+\droptitle=\skip67
+\c@book=\count277
+\c@part=\count278
+\c@chapter=\count279
+\c@section=\count280
+\c@subsection=\count281
+\c@subsubsection=\count282
+\c@paragraph=\count283
+\c@subparagraph=\count284
+\beforechapskip=\skip68
+\midchapskip=\skip69
+\afterchapskip=\skip70
+\chapindent=\skip71
+\bottomsectionskip=\skip72
+\secindent=\skip73
+\beforesecskip=\skip74
+\aftersecskip=\skip75
+\subsecindent=\skip76
+\beforesubsecskip=\skip77
+\aftersubsecskip=\skip78
+\subsubsecindent=\skip79
+\beforesubsubsecskip=\skip80
+\aftersubsubsecskip=\skip81
+\paraindent=\skip82
+\beforeparaskip=\skip83
+\afterparaskip=\skip84
+\subparaindent=\skip85
+\beforesubparaskip=\skip86
+\aftersubparaskip=\skip87
+\pfbreakskip=\skip88
+\c@@ppsavesec=\count285
+\c@@ppsaveapp=\count286
+\ragrparindent=\dimen147
+\everylistparindent=\dimen148
+\parsepi=\skip89
+\topsepi=\skip90
+\itemsepi=\skip91
+\parsepii=\skip92
+\topsepii=\skip93
+\topsepiii=\skip94
+\itemsepii=\skip95
+\itemsepiii=\skip96
+\partopsepii=\skip97
+\partopsepiii=\skip98
+\m@msavetopsep=\skip99
+\m@msavepartopsep=\skip100
+\@enLab=\toks17
+\abstitleskip=\skip101
+\absleftindent=\skip102
+\abs@leftindent=\dimen149
+\absrightindent=\skip103
+\absparindent=\skip104
+\absparsep=\skip105
+\c@vslineno=\count287
+\c@poemline=\count288
+\c@modulo@vs=\count289
+\c@memfvsline=\count290
+\vleftskip=\skip106
+\vrightskip=\skip107
+\stanzaskip=\skip108
+\versewidth=\skip109
+\vgap=\skip110
+\vindent=\skip111
+\vleftmargin=\dimen150
+\c@verse=\count291
+\c@chrsinstr=\count292
+\beforepoemtitleskip=\skip112
+\afterpoemtitleskip=\skip113
+\c@poem=\count293
+\beforePoemTitleskip=\skip114
+\midPoemTitleskip=\skip115
+\afterPoemTitleskip=\skip116
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen151
+\ar@mcellbox=\box53
+\extrarowheight=\dimen152
+\NC@list=\toks18
+\extratabsurround=\skip117
+\backup@length=\skip118
+\ar@cellbox=\box54
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/delarray.sty
+Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen153
+\TX@old@table=\dimen154
+\TX@old@col=\dimen155
+\TX@target=\dimen156
+\TX@delta=\dimen157
+\TX@cols=\count294
+\TX@ftn=\toks19
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen158
+\lightrulewidth=\dimen159
+\cmidrulewidth=\dimen160
+\belowrulesep=\dimen161
+\belowbottomsep=\dimen162
+\aboverulesep=\dimen163
+\abovetopsep=\dimen164
+\cmidrulesep=\dimen165
+\cmidrulekern=\dimen166
+\defaultaddspace=\dimen167
+\@cmidla=\count295
+\@cmidlb=\count296
+\@aboverulesep=\dimen168
+\@belowrulesep=\dimen169
+\@thisruleclass=\count297
+\@lastruleclass=\count298
+\@thisrulewidth=\dimen170
+)
+\ctableftskip=\skip119
+\ctabrightskip=\skip120
+\abovecolumnspenalty=\count299
+\@linestogo=\count300
+\@cellstogo=\count301
+\@cellsincolumn=\count302
+\crtok=\toks20
+\@mincolumnwidth=\dimen171
+\c@newflo@tctr=\count303
+\mem@margin@floatbox=\box55
+\@contcwidth=\skip121
+\@contindw=\skip122
+\abovecaptionskip=\skip123
+\belowcaptionskip=\skip124
+\subfloattopskip=\skip125
+\subfloatcapskip=\skip126
+\subfloatcaptopadj=\skip127
+\subfloatbottomskip=\skip128
+\subfloatlabelskip=\skip129
+\subfloatcapmargin=\dimen172
+\c@@contsubnum=\count304
+\m@mscap@capbox=\box56
+\m@mscap@fbox=\box57
+\sidecapsep=\dimen173
+\sidecapwidth=\dimen174
+\m@m@tempdima=\dimen175
+\m@mscapraise=\dimen176
+\sidecapraise=\dimen177
+\m@mscapmainwidth=\dimen178
+\m@mscaplkern=\dimen179
+\beforeepigraphskip=\skip130
+\afterepigraphskip=\skip131
+\epigraphwidth=\skip132
+\epigraphrule=\skip133
+LaTeX Info: Redefining \em on input line 7017.
+LaTeX Info: Redefining \emph on input line 7025.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/home/daniel/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+(/home/daniel/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.
+sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/home/daniel/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)))
+\c@section@level=\count305
+)
+\tocentryskip=\skip134
+\tocbaseline=\skip135
+\cftparskip=\skip136
+\cftbeforebookskip=\skip137
+\cftbookindent=\dimen180
+\cftbooknumwidth=\dimen181
+\cftbeforepartskip=\skip138
+\cftpartindent=\skip139
+\cftpartnumwidth=\skip140
+\cftbeforechapterskip=\skip141
+\cftchapterindent=\skip142
+\cftchapternumwidth=\skip143
+\cftbeforesectionskip=\skip144
+\cftsectionindent=\skip145
+\cftsectionnumwidth=\skip146
+\cftbeforesubsectionskip=\skip147
+\cftsubsectionindent=\skip148
+\cftsubsectionnumwidth=\skip149
+\cftbeforesubsubsectionskip=\skip150
+\cftsubsubsectionindent=\skip151
+\cftsubsubsectionnumwidth=\skip152
+\cftbeforeparagraphskip=\skip153
+\cftparagraphindent=\skip154
+\cftparagraphnumwidth=\skip155
+\cftbeforesubparagraphskip=\skip156
+\cftsubparagraphindent=\skip157
+\cftsubparagraphnumwidth=\skip158
+\prechapterprecisshift=\dimen182
+\c@maxsecnumdepth=\count306
+\bibindent=\dimen183
+\bibitemsep=\skip159
+\indexcolsep=\skip160
+\indexrule=\skip161
+\indexmarkstyle=\toks22
+\@indexbox=\insert252
+LaTeX Info: Redefining \raggedbottom on input line 8108.
+LaTeX Info: Redefining \flushbottom on input line 8112.
+\glossarycolsep=\dimen184
+\glossaryrule=\dimen185
+\sideparvshift=\skip162
+\sideins=\insert251
+\sidebartopsep=\skip163
+\sidebarhsep=\skip164
+\sidebarvsep=\skip165
+\sidebarwidth=\skip166
+\footmarkwidth=\skip167
+\footmarksep=\skip168
+\footparindent=\skip169
+\footinsdim=\skip170
+\footinsv@r=\insert250
+\@mpfootinsv@r=\insert249
+\m@m@k=\count307
+\m@m@h=\dimen186
+\m@mipn@skip=\skip171
+\sidefootins=\insert248
+\sidefootadjust=\skip172
+\sidefootheight=\skip173
+\sidefoothsep=\skip174
+\sidefootvsep=\skip175
+\sidefootwidth=\skip176
+\m@mdownsf=\skip177
+\c@sidefootnote=\count308
+\sidefootmarkwidth=\skip178
+\sidefootmarksep=\skip179
+\sidefootparindent=\skip180
+\c@pagenote=\count309
+\c@pagenoteshadow=\count310
+\mem@pn@lastkern=\skip181
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read2
+)
+\verbatimindent=\skip182
+\verbatim@out=\write3
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/shortvrb.sty
+Package: shortvrb 2024/10/23 v3.0q Standard LaTeX documentation package V3 (FMi
+)
+)
+\bvboxsep=\skip183
+\c@memfbvline=\count311
+\c@bvlinectr=\count312
+\bvnumlength=\skip184
+\fb@frw=\dimen187
+\fb@frh=\dimen188
+\FrameRule=\dimen189
+\FrameSep=\dimen190
+\c@cp@cntr=\count313
+\c@ism@mctr=\count314
+\c@xsm@mctr=\count315
+\c@csm@mctr=\count316
+\c@ksm@mctr=\count317
+\c@xksm@mctr=\count318
+\c@cksm@mctr=\count319
+\c@msm@mctr=\count320
+\c@xmsm@mctr=\count321
+\c@cmsm@mctr=\count322
+\c@bsm@mctr=\count323
+\c@workm@mctr=\count324
+\c@sheetsequence=\count325
+\c@lastsheet=\count326
+\c@lastpage=\count327
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/textcase/textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+\c@figure=\count328
+\c@lofdepth=\count329
+\cftbeforefigureskip=\skip185
+\cftfigureindent=\skip186
+\cftfigurenumwidth=\skip187
+\c@table=\count330
+\c@lotdepth=\count331
+\cftbeforetableskip=\skip188
+\cfttableindent=\skip189
+\cfttablenumwidth=\skip190
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/home/daniel/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/home/daniel/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/home/daniel/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen191
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/home/daniel/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count334
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count335
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen192
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count336
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count340
+\c@bookmark@seq@number=\count341
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.st
+y
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.st
+y
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip191
+) (/home/daniel/.miktex/texmfs/install/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2025/03/06 v1.23 hyperref package fixes for memoir class
+\c@memhycontfloat=\count342
+\c@mem@Hpagenote=\count343
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
+)
+\BKM@id=\count344
+))
+(/home/daniel/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2025/04/29 v25.8 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count345
+\U@D=\dimen195
+\l@unhyphenated=\language1
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count346
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/daniel/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/babel-portuges/brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Portuguese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 53.
+
+Package babel Info: Making " an active character on input line 143.
+)) (/home/daniel/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip192
+\enit@outerparindent=\dimen196
+\enit@toks=\toks25
+\enit@inbox=\box58
+\enit@count@id=\count347
+\enitdp@description=\count348
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count349
+\calc@Bcount=\count350
+\calc@Adimen=\dimen197
+\calc@Bdimen=\dimen198
+\calc@Askip=\skip193
+\calc@Bskip=\skip194
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count351
+\calc@Cskip=\skip195
+)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 708pt by 455pt
+Spine and edge margins: 85.35826pt and 56.9055pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 42.9055pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+\c@abntex@bookmarkcounter=\count352
+\cftlastnumwidth=\skip196
+\chapternamenumlength=\skip197
+\ABNTEXcitacaorecuo=\skip198
+\c@alineasi=\count353
+\c@alineasii=\count354
+\enitdp@alineas=\count355
+\c@subalineasi=\count356
+\enitdp@subalineas=\count357
+\c@incisosi=\count358
+\enitdp@incisos=\count359
+\ABNTEXsignwidth=\skip199
+\ABNTEXsignthickness=\skip256
+\ABNTEXsignskip=\skip257
+) (/home/daniel/.miktex/texmfs/install/tex/latex/hyperref/backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
+)
+\c@quadro=\count360
+\c@loqdepth=\count361
+\cftbeforequadroskip=\skip258
+\cftquadroindent=\skip259
+\cftquadronumwidth=\skip260
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 23.
+
+(configuracoes/pacotes.tex
+(/home/daniel/.miktex/texmfs/install/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip261
+\ABCIauxlen=\skip262
+\c@ABCIaux=\count362
+\c@ABCImax=\count363
+
+(/home/daniel/.miktex/texmfs/install/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/home/daniel/.miktex/texmfs/install/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip263
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks26
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx))
+(/home/daniel/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip264
+\rownum=\count364
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count365
+\float@exts=\toks30
+\float@box=\box59
+\@float@everytoks=\toks31
+\@floatcapt=\box60
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen199
+\Gin@req@width=\dimen256
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen257
+\captionmargin=\dimen258
+\caption@leftmargin=\dimen259
+\caption@rightmargin=\dimen260
+\caption@width=\dimen261
+\caption@indent=\dimen262
+\caption@parindent=\dimen263
+\caption@hangindent=\dimen264
+Package caption Info: memoir document class detected.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/caption/caption-memoir.sto
+File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to th
+e memoir document class (AR)
+))
+\c@caption@flags=\count366
+\c@continuedfloat=\count367
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen265
+\caption@adjustwidth@linewidth=\dimen266
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/was/icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/microtype/microtype.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+\MT@toks=\toks32
+\MT@tempbox=\box61
+\MT@count=\count368
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks33
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen267
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count369
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/02/11 v3.2a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip265
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip266
+\multirow@cntb=\count370
+\multirow@dima=\skip267
+\bigstrutjot=\dimen268
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/subeqnarray/subeqnarray.sty
+Package: subeqnarray 2024/07/20 v2.1e subeqnarray package
+\c@subequation=\count371
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2025/01/27 v2.1e lastpage: 2.09 or 2e? (HMM)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/lastpage/lastpage2e.sty
+Package: lastpage2e 2025/01/27 v2.1e Decide which 2e lastpage version to use (H
+MM)
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/lastpage/lastpagemodern.sty
+Package: lastpagemodern 2025-01-27 v2.1e Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count372
+) 
+)) (/home/daniel/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks34
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip268
+
+For additional information on amsmath, use the `?' option.
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks35
+\ex@=\dimen269
+))
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen270
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count373
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count374
+\leftroot@=\count375
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count376
+\DOTSCASE@=\count377
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box62
+\strutbox@=\box63
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen271
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count378
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count379
+\dotsspace@=\muskip18
+\c@parentequation=\count380
+\dspbrk@lvl=\count381
+\tag@help=\toks36
+\row@=\count382
+\column@=\count383
+\maxfields@=\count384
+\andhelp@=\toks37
+\eqnshift@=\dimen272
+\alignsep@=\dimen273
+\tagshift@=\dimen274
+\tagwidth@=\dimen275
+\totwidth@=\dimen276
+\lineht@=\dimen277
+\@envbody=\toks38
+\multlinegap=\skip269
+\multlinetaggap=\skip270
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count385
+\algocf@hangindent=\skip271
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count386
+LaTeX Info: Redefining \checkoddpage on input line 45.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\skiptotal=\skip272
+\skiplinenumber=\skip273
+\skiprule=\skip274
+\skiphlne=\skip275
+\skiptext=\skip276
+\skiplength=\skip277
+\algomargin=\skip278
+\skipalgocfslide=\skip279
+\algowidth=\dimen278
+\inoutsize=\dimen279
+\inoutindent=\dimen280
+\interspacetitleruled=\dimen281
+\interspacealgoruled=\dimen282
+\interspacetitleboxruled=\dimen283
+\algocf@ruledwidth=\skip280
+\algocf@inoutbox=\box64
+\algocf@inputbox=\box65
+\AlCapSkip=\skip281
+\AlCapHSkip=\skip282
+\algoskipindent=\skip283
+\algocf@nlbox=\box66
+\algocf@hangingbox=\box67
+\algocf@untilbox=\box68
+\algocf@skipuntil=\skip284
+\algocf@capbox=\box69
+\algocf@lcaptionbox=\skip285
+\algoheightruledefault=\skip286
+\algoheightrule=\skip287
+\algotitleheightruledefault=\skip288
+\algotitleheightrule=\skip289
+\c@algocfline=\count387
+\c@algocfproc=\count388
+\c@algocf=\count389
+\algocf@algoframe=\box70
+\algocf@algobox=\box71
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2025/03/10 v7.0a a miscellany of footnote facilities
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/footmisc/footmisc-2022-02-14.sty
+Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
+\FN@temptoken=\toks40
+\footnotemargin=\dimen284
+\@outputbox@depth=\dimen285
+Package footmisc Info: Declaring symbol style bringhurst on input line 699.
+Package footmisc Info: Declaring symbol style chicago on input line 707.
+Package footmisc Info: Declaring symbol style wiley on input line 716.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 747.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 768
+.
+)) (/home/daniel/.miktex/texmfs/install/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)))
+(/home/daniel/.miktex/texmfs/install/tex/latex/ae/aecompl.sty
+Package: aecompl 1998/07/23 0.9 T1 Complements for AE fonts (D. Roegel)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/threeparttable/threeparttable.st
+y
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box72
+))
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 24.
+
+(configuracoes/configuracoes-pdf.tex
+Package hyperref Info: Option `colorlinks' set `true' on input line 14.
+Package hyperref Info: Option `breaklinks' set `true' on input line 14.
+Package color Info: Redefining color blue on input line 18.
+\utfpr-proposta-tcc@idxfile=\write4
+\openout4 = `utfpr-proposta-tcc.idx'.
+
+
+Writing index file utfpr-proposta-tcc.idx 
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 30.
+
+(estrutura/pre-textuais/capa.tex)
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 31.
+
+(estrutura/pre-textuais/folha-rosto.tex)
+LaTeX Font Info:    Trying to load font information for T1+aess on input line 3
+3.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)
+(utfpr-proposta-tcc.aux)
+\openout1 = `utfpr-proposta-tcc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+Package hyperref Info: Link coloring ON on input line 33.
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported  on input line 33.
+\myptabbox=\box73
+\myptabboxwidth=\skip290
+
+(/home/daniel/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count390
+\scratchdimen=\dimen286
+\scratchbox=\box74
+\nofMPsegments=\count391
+\nofMParguments=\count392
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count393
+\MPscratchDim=\dimen287
+\MPnumerator=\count394
+\makeMPintoPDFobject=\count395
+\everyMPtoPDFconversion=\toks42
+) (/home/daniel/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+(/home/daniel/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 33.
+Package microtype Info: Applying patch `item' on input line 33.
+Package microtype Info: Applying patch `toc' on input line 33.
+Package microtype Info: Applying patch `eqnum' on input line 33.
+Package microtype Info: Applying patch `footnote' on input line 33.
+Package microtype Info: Applying patch `verbatim' on input line 33.
+LaTeX Info: Redefining \microtypesetup on input line 33.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 33.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `aess' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <12> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <14.4> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 36.
+
+
+[1
+
+{/home/daniel/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \imprimircapa
+                                                                 	          ...
+[2
+
+] (/home/daniel/.miktex/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/home/daniel/.miktex/texmfs/install/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 37
+.
+
+(/home/daniel/.miktex/texmfs/install/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (1.20285pt too wide) in paragraph at lines 37--37
+[]|\T1/aess/m/n/10.95 (-20) Coorientador:| 
+ []
+
+
+Overfull \hbox (1.04799pt too wide) in paragraph at lines 37--37
+[][]  
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 \imprimirfolhaderosto{}
+                                                                 		   % Coma...
+[2
+
+
+]
+\openout2 = `estrutura/textuais/proposta-de-tcc.aux'.
+
+ (estrutura/textuais/proposta-de-tcc.tex)
+
+[1
+
+
+
+]
+\openout2 = `estrutura/textuais/descricao-da-proposta.aux'.
+
+ (estrutura/textuais/descricao-da-proposta.tex
+
+[2
+
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 10.
+
+
+LaTeX Warning: Citation `ModeloGestaoCOP' on page 3 undefined on input line 10.
+
+
+
+LaTeX Warning: Citation `CartaCidades' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `ModeloGestaoCOP' on page 3 undefined on input line 16.
+
+
+
+LaTeX Warning: Citation `ModeloGestaoCOP' on page 3 undefined on input line 22.
+
+
+
+
+[3]
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 3
+2.
+ (/home/daniel/.miktex/texmfs/install/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `aett' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 74.
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported  on input line 74.
+[4]
+
+LaTeX Warning: Citation `Maturana2003' on page 5 undefined on input line 109.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+ []
+
+
+
+[5]
+
+LaTeX Warning: Citation `Maturana2003' on page 6 undefined on input line 114.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <10> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 124.
+
+LaTeX Warning: Citation `Silva2000' on page 6 undefined on input line 124.
+
+
+Overfull \hbox (11.73239pt too wide) in paragraph at lines 134--135
+[]\T1/aess/m/n/12 (-20) No exemplo acima, para a chamada da referência o comand
+o []\T1/aett/m/n/12 \cite[p.~28]{Silva2000}
+ []
+
+
+LaTeX Warning: Citation `Maturana2003' on page 6 undefined on input line 137.
+
+
+LaTeX Warning: Citation `Maturana2003' on page 6 undefined on input line 138.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+
+
+[6]
+
+LaTeX Warning: Citation `Maturana2003' on page 7 undefined on input line 141.
+
+
+LaTeX Warning: Citation `Barbosa2004' on page 7 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Silva2000' on page 7 undefined on input line 143.
+
+
+LaTeX Warning: Citation `Silva2000' on page 7 undefined on input line 144.
+
+
+LaTeX Warning: Citation `Maturana2003' on page 7 undefined on input line 145.
+
+
+LaTeX Warning: Citation `Maturana2003' on page 7 undefined on input line 146.
+
+
+LaTeX Warning: Citation `Barbosa2004' on page 7 undefined on input line 147.
+
+
+LaTeX Warning: Citation `Maturana2003' on page 7 undefined on input line 147.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
+
+ []
+
+
+LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
+(Font)              using `T1/aess/m/n' instead on input line 149.
+
+
+
+[7]
+
+LaTeX Warning: Citation `abnTeX22014d' on page 8 undefined on input line 171.
+
+
+LaTeX Warning: Citation `abnTeX22014d' on page 8 undefined on input line 171.
+
+
+LaTeX Warning: Citation `abnTeX22014b' on page 8 undefined on input line 171.
+
+
+LaTeX Warning: Citation `abnTeX22014c' on page 8 undefined on input line 171.
+
+
+Overfull \hbox (2.42595pt too wide) in paragraph at lines 178--179
+[]\T1/aess/m/n/12 (-20) Nesta seção (ver qual o nome mais adequado ao trabalho)
+ deve ser descrito sucintamente
+ []
+
+<dados/images/latex-logo.png, id=64, 492.84125pt x 202.7575pt>
+File: dados/images/latex-logo.png Graphic file (type png)
+<use dados/images/latex-logo.png>
+Package pdftex.def Info: dados/images/latex-logo.png  used on input line 191.
+(pdftex.def)             Requested size: 246.42001pt x 101.3785pt.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <10.95> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 193.
+
+LaTeX Warning: Citation `abnTeX22014d' on page 8 undefined on input line 193.
+
+(dados/quadros/quadro1.tex
+Overfull \hbox (1.94116pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 (-20) Mar| 
+ []
+
+
+Overfull \hbox (0.74525pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 (-20) Mai| 
+ []
+
+
+Overfull \hbox (1.63916pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 (-20) Ago| 
+ []
+
+
+Overfull \hbox (0.76881pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 (-20) Out| 
+ []
+
+
+Overfull \hbox (1.9484pt too wide) in paragraph at lines 6--6
+[]|\T1/aess/bx/n/12 (-20) Nov| 
+ []
+
+
+Overfull \hbox (1.0275pt too wide) in paragraph at lines 6--7
+[]|\T1/aess/bx/n/12 (-20) Dez| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\T1/aess/m/n/10.95 (+20) 6. Elaboração da
+ []
+
+
+Overfull \hbox (9.00572pt too wide) in paragraph at lines 4--23
+ [][] 
+ []
+
+)
+
+[8 <./dados/images/latex-logo.png>]
+Overfull \hbox (2.22246pt too wide) in paragraph at lines 233--235
+[]\T1/aess/m/n/12 (-20) Coloque todos os materiais que serão utilizados. Exempl
+os: computadores, equipamentos
+ []
+
+(dados/quadros/quadro2.tex
+Overfull \hbox (0.9282pt too wide) in paragraph at lines 20--20
+[]|\T1/aess/m/n/12 (-20) Orientaçao| 
+ []
+
+
+Overfull \hbox (10.62209pt too wide) in paragraph at lines 4--43
+[][] 
+ []
+
+))
+
+[9]
+
+[10]
+\openout2 = `estrutura/pos-textuais/referencias.aux'.
+
+ (estrutura/pos-textuais/referencias.tex
+No file utfpr-proposta-tcc.bbl.
+) 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(utfpr-proposta-tcc.aux (estrutura/textuais/proposta-de-tcc.aux)
+(estrutura/textuais/descricao-da-proposta.aux)
+(estrutura/pos-textuais/referencias.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package lastpage Warning: Rerun to get the references right on input line 48.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22411 strings out of 471878
+ 366427 string characters out of 5521365
+ 843612 words of memory out of 5000000
+ 48076 multiletter control sequences out of 15000+600000
+ 692928 words of font info for 446 fonts, out of 8000000 for 9000
+ 2 hyphenation exceptions out of 8191
+ 113i,13n,121p,1017b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/daniel/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pf
+b></home/daniel/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pf
+b></home/daniel/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></home/daniel/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi10
+.pfb></home/daniel/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi1
+2.pfb></home/daniel/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt1
+2.pfb>
+Output written on utfpr-proposta-tcc.pdf (13 pages, 150197 bytes).
+PDF statistics:
+ 188 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 92326 words of extra memory for PDF output out of 106986 (max. 10000000)
+

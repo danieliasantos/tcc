@@ -1,0 +1,9 @@
+@Article{Yolo,
+  title                    = {You Only Look Once: Unified, Real-Time Object Detection},
+  Author                   = {Redmon, Joseph and Farhadi, Ali},
+  year                     = {2016},
+  journal                  = {Computer Vision Foundation},
+  Timestamp                = {2019.05.02},
+  Pages                    = {779--788}
+  Url                      = {https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf},
+}
