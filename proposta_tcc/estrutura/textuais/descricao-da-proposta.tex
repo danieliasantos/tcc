@@ -18,7 +18,7 @@ Conforme o citado modelo \cite{ModeloGestaoCOP}, a linha de atuação de Monitor
 Este trabalho analisa e propõe uma mudança no método de análise de dados, bem como sua automatização, para suporte a uma das atividades da linha de atuação de Monitoramento da Cidade, relacionadas ao monitoramento de câmeras, que se delinea a seguir.
 
 \subsection{Contextualização do Projeto}
- 
+
 Conforme descreve o modelo \cite{ModeloGestaoCOP}, a atividade de monitoramento se utiliza de diversos tipos de sensores para sua consecução. Dentre estes sensores, as câmeras instaladas em locais públicos permitem acesso à visualização de diversos pontos da cidade em tempo real.
 
 A atividade de monitoramento das câmeras, ou seja, a visualização das suas imagens em tempo real, é realizada por agentes das Instituições que têm assento no ambiente chamado Sala de Controle Integrado, local onde as imagens são acessadas com o propósito de identificar problemas públicos mais rapidamente, a fim de possibilitar maior celeridade também à resposta.
@@ -27,21 +27,41 @@ São diversos os tipos de problemas públicos monitorados, tais como a deposiç�
 
 Para tornar o serviço mais eficiente, o COP-BH desenvolveu um processo de análise de dados sobre problemas públicos para elaborar um roteiro de monitoramento, que sugere os problemas que devem ser monitorados, os períodos de maior relevância para executar o monitoramento e quais as câmeras deveriam ser monitoradas. 
 
-A partir deste roteiro, as equipes de monitoramento teriam um guia de referência que poderia aprimorar o seu trabalho no sentido da eficiência -- pois conheceriam as câmeras com as quais deveriam ter maior foco dentre todas as disponíveis e quando deveriam ser monitoradas, e da eficácia -- pois isso poderia aumentar a probabilidade de visualizar algum problema público durante o monitoramento.
+A partir deste roteiro, as equipes de monitoramento teriam um guia de referência que poderia aprimorar o seu trabalho no sentido da eficiência -- pois conheceriam as câmeras deveriam priorizar no monitoramento e quando deveriam ser monitoradas, e da eficácia -- pois isso poderia aumentar a probabilidade de visualizar algum problema público durante o monitoramento.
 
-Para fins deste trabalho, o problema público analisado é o furto de cabos. Para isso, foram utilizados dados reais de ocorrências públicas deste problema, e são originados do Sistema de Gestão de Ocorrências Integradas (SICOP Ocorrências), por meio do qual as Instituições e Agências compartilham informações no COP-BH, Sistema de Gestão da Operação (SGO) utilizado pela BHTrans para controle de suas operações, e dados compartilhados pelas operadoras de telefonia Oi, Claro, Vivo e V.tal. O dataset consiste dos seguintes atributos: \texttt{origem, data\_hora, mes\_ano, trimestre\_ano, latitude, longitude, endereco} e \texttt{regional}.
+Para fins deste trabalho, o problema público analisado é o furto de cabos. Para isso, foram utilizados dados reais de ocorrências públicas deste problema em Belo Horizonte, e são originados do Sistema de Gestão de Ocorrências Integradas (SICOP Ocorrências), por meio do qual as Instituições e Agências compartilham informações no COP-BH, Sistema de Gestão da Operação (SGO) utilizado pela BHTrans para controle de suas operações, e dados de furtos de cabos de telefonia compartilhados pelas operadoras de telefonia Oi, Claro, Vivo e V.tal. Estes dados são os mesmos utilizados na elaboração do roteiro de monitoramento. O dataset utilizado para este trabalho contém dados do período de 03/2018 a 05/2025, e consiste dos seguintes atributos:
+
+\begin{itemize}
+  \item{\texttt{origem}, que apresenta de qual sistema os dados se originaram;}
+  \item{\texttt{data\_hora}, que apresenta a data e hora em que o furto ocorreu;}
+  \item{\texttt{mes\_ano}, que apresenta o mês e ano da ocorrência (dados adicionados para facilitar a análise);}
+  \item{\texttt{trimestre\_ano}, que apresenta o trimestre e ano da ocorrência (dados adicionados para facilitar a análise);}
+  \item{\texttt{latitude} e \texttt{longitude}, que apresenta a localização exata da ocorrência; e}
+  \item{\texttt{endereco} e \texttt{regional}, que apresenta o endereço físico aproximado da ocorrência.}
+\end{itemize}
 
 \subsection{Definição do Problema}
 
-A elaboração do roteiro de monitoramento consiste da 
+Atualmente, o COP-BH elabora o roteiro de monitoramento agrupando as ocorrências pela sua localização, usando o método de estimativa de densidade de kernel, para gerar um mapa de calor geoespacial (\textit{heatmap}) \cite{Wilkinson2009} para demonstrar visualmente as regiões onde há maior concentração de furtos, utilizando a ferramenta de sistema de informação geográfica QGIS \cite{Qgis}. Dados de localização das câmeras públicas de Belo Horizonte são, então, sobrepostos ao mapa de calor, sendo este o resultado final do roteiro de monitoramento, conforme demonstrado na Figura \ref{fig:mapa_roteiro}.
 
-P3. Relevância do Problema
+\begin{figure}[!htb]
+  \captionsetup{singlelinecheck=false}
+  \centering
+  \includegraphics[scale=1,keepaspectratio]{dados/images/mapa_roteiro.png}
+  \caption{Roteiro de Monitoramento: Mapa de calor de locais de furtos de cabos em Belo Horizonte, com sobreposição de câmeras em locais públicos.}
+  \fonte{Produção própria}
+  \label{fig:mapa_roteiro}
+\end{figure}
 
-P4. Justificativa
+Contudo, 
 
-P5. Desafios do Projeto
+\subsection{Relevância do Problema}
 
-P6. Contribuição
+\subsection{Justificativa}
+
+\subsection{Desafios do Projeto}
+
+\subsection{Contribuição}
 
 %-----------------------------------------------------------------------------------------
 
