@@ -48,7 +48,7 @@ Atualmente, o COP-BH elabora o roteiro de monitoramento agrupando as ocorrência
   \captionsetup{singlelinecheck=false}
   \centering
   \includegraphics[scale=1,keepaspectratio]{dados/images/mapa_roteiro.png}
-  \caption{Roteiro de Monitoramento: Mapa de calor de locais de furtos de cabos em Belo Horizonte, com sobreposição de câmeras em locais públicos.}
+  \caption{Roteiro de Monitoramento: Mapa de calor de locais de furtos de cabos em Belo Horizonte, com sobreposição de câmeras públicas.}
   \fonte{Produção própria}
   \label{fig:mapa_roteiro}
 \end{figure}
@@ -64,18 +64,72 @@ Contudo, a análise de dados agregados, na forma como é feita, pode levar a int
   \label{fig:grafico_barras_ocorrencias_ano}
 \end{figure}
 
-Além disso, o simples incremento de dados à essa análise pode ocultar ou impedir a captura de mudanças, que embora possam parecer sutis, são importântes para a sua eficácia, tais como alterações na localização das concentrações do fenômeno e sazonalidades. Conforme conceitou Robinson \cite{Robinson1950}, ``falácia ecológica'' (\textit{``Ecological Fallacy''}) refere-se a um tipo de erro lógico que se pode cometer ao inferir comportamentos individuais a partir de estatísticas de dados agregados. Por sua vez, Weisburd \cite{Weisburd2015} sintetizou a importância da análise espacial por meio de \textit{hotspots}, ou pontos quentes, onde há concentração de crimes. Acrescenta-se, ainda, o efeito de deslocamento geográfico (\textit{displacement}) conceituado por Barr \cite{Barr1990}, que explorou as diferentes formas como o crime se move em resposta a ações de prevenção. A Figura representa esse deslocamento espacial.
+Além disso, o simples incremento de novas observações ao conjunto de dados pode ocultar ou impedir a captura de alterações e mudanças, que embora possam parecer sutis, são de fundamental importância para a eficácia da análise, tais como alterações na localização das concentrações do fenômeno e sazonalidades. 
 
-\begin{table}[h!]
-\centering
-  \begin{tabular}{|m{3cm}|m{3cm}|m{3cm}|m{3cm}|} % Define colunas com largura fixa
+Conforme concluiu Robinson \cite{Robinson1950}, erros podem ser cometidos, ou conclusões equivocadas podem ser obtidas ao se inferir comportamentos individuais a partir de estatísticas de dados agregados, a chamada ``falácia ecológica'' (\textit{``Ecological Fallacy''}). Seu estudo estabeleceu formalmente o problema, mostrando como correlações em nível de grupo (estados, cidades, por exemplo) podem ser completamente diferentes ou até opostas às correlações em nível individual.
+
+Por sua vez, Weisburd \cite{Weisburd2015} complementou este entendimento, ao argumentar pela necessidade de ir além da análise de dados agregados, e buscar padrões espaciais por meio de \textit{hotspots}, ou pontos quentes, onde há concentração de crimes. 
+
+Acrescenta-se, ainda, o efeito de deslocamento geográfico (\textit{``displacement''}) conceituado por Barr \cite{Barr1990}, que explorou as diferentes formas como o crime se move em resposta a ações de prevenção. As figuras apresentadas na Tabela \ref{tab:tabela_mapas} representam, empiricamente, esse deslocamento espacial dos eventos de furto de cabo em Belo Horizonte, além de indicar as diferentes concentrações dos eventos no tempo. Para fins deste comparativo foram considerados apenas os anos de 2023 e 2024, por serem os anos em que há maior volume de dados no dataset.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|m{3.5cm}|m{3.5cm}|m{3.5cm}|m{3.5cm}|}
     \hline
-    \includegraphics[width=3cm]{dados/images/mapa_20231_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20232_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20233_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20234_2.png} \\ \hline
-    \includegraphics[width=3cm]{dados/images/mapa_20241_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20242_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20243_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20244_2.png} \\ \hline
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20231_2.png}
+        \captionof{figure}{1T 2023}
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20232_2.png}
+        \captionof{figure}{2T 2023}
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20233_2.png}
+        \captionof{figure}{3T 2023}
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20234_2.png}
+        \captionof{figure}{4T 2023}
+      \end{minipage}
+    \\ \hline
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20241_2.png}
+        \captionof{figure}{1T 2024}
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20242_2.png}
+        \captionof{figure}{2T 2024}
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20243_2.png}
+        \captionof{figure}{3T 2024}
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=3.5cm]{dados/images/mapa_20244_2.png}
+        \captionof{figure}{4T 2024}
+      \end{minipage}
+    \\ \hline
   \end{tabular}
-  \caption{Tabela com 8 imagens}
-  \label{tab:tabela_imagens}
+  \caption{Comparação dos mapas de calor por densidade de kernel das observações de furtos de cabo em Belo Horizonte, dos anos de 2023 e 2024, por Trimestre.}
+  \label{tab:tabela_mapas}
 \end{table}
+
+Estes fatos corroboram o entendimento de que o método atualmente utilizado pelo COP-BH ainda é insuficiente para uma análise robusta do fenômeno, além do fato de ser executado manualmente. Assim, esse trabalho busca propor um novo método de análise, bem como a automatização da mesma.
 
 \subsection{Relevância do Problema}
 
