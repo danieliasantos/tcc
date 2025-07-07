@@ -29,7 +29,7 @@ Para tornar o serviço mais eficiente, o COP-BH desenvolveu um processo de anál
 
 A partir deste roteiro, as equipes de monitoramento teriam um guia de referência que poderia aprimorar o seu trabalho no sentido da eficiência -- pois conheceriam as câmeras deveriam priorizar no monitoramento e quando deveriam ser monitoradas, e da eficácia -- pois isso poderia aumentar a probabilidade de visualizar algum problema público durante o monitoramento.
 
-Para fins deste trabalho, o problema público analisado é o furto de cabos. Para isso, foram utilizados dados reais de ocorrências públicas deste problema em Belo Horizonte, e são originados do Sistema de Gestão de Ocorrências Integradas (SICOP Ocorrências), por meio do qual as Instituições e Agências compartilham informações no COP-BH, Sistema de Gestão da Operação (SGO) utilizado pela BHTrans para controle de suas operações, e dados de furtos de cabos de telefonia compartilhados pelas operadoras de telefonia Oi, Claro, Vivo e V.tal. Estes dados são os mesmos utilizados na elaboração do roteiro de monitoramento. O dataset utilizado para este trabalho contém dados do período de 03/2018 a 05/2025, e consiste dos seguintes atributos:
+Para fins deste trabalho, o problema público analisado é o furto de cabos. Para isso, foram utilizados dados reais de ocorrências públicas deste problema em Belo Horizonte, e são originados do Sistema de Gestão de Ocorrências Integradas (SICOP Ocorrências), por meio do qual as Instituições e Agências compartilham informações no COP-BH, Sistema de Gestão da Operação (SGO) utilizado pela BHTrans para controle de suas operações, e dados de furtos de cabos de telefonia compartilhados pelas operadoras de telefonia Oi, Claro, Vivo e V.tal. Estes dados são os mesmos utilizados na elaboração do roteiro de monitoramento. O dataset utilizado para este trabalho contém 18.590 observações sobre o problema de furto de cabos, no período de 03/2018 a 05/2025, e consiste dos seguintes atributos:
 
 \begin{itemize}
   \item{\texttt{origem}, que apresenta de qual sistema os dados se originaram;}
@@ -53,7 +53,29 @@ Atualmente, o COP-BH elabora o roteiro de monitoramento agrupando as ocorrência
   \label{fig:mapa_roteiro}
 \end{figure}
 
-Contudo, 
+Contudo, a análise de dados agregados, na forma como é feita, pode levar a interpretações incorretas. Como se poderá verificar na Figura \ref{fig:grafico_barras_ocorrencias_ano}, que demonstra a evolução dos eventos de furtos de cabo nos últimos anos, houve um aumento abrupto ocorrido do ano de 2022 para o ano de 2023, devido ao acréscimo de dados das operadoras Claro, Vivo e V.tal. Conquanto haja uma aparente e relativa estabilização, do ano de 2023 para 2024, não se pode extrapolar projetando a linha de tendência para o ano de 2025, tendo em vista que a regressão linear representada pela linha de tendência não modela mudanças bruscas de comportamento (tal como do ano de 2022 para 2023), pois representa a tendência média. Portanto, sua inclinação pode ser modificada artificialmente, mascarando novos comportamentos ou incrementos de fontes, como é o caso do dataset estudado.
+
+\begin{figure}[!htb]
+  \captionsetup{singlelinecheck=false}
+  \centering
+  \includegraphics[scale=0.5,keepaspectratio]{dados/images/grafico_barras_ocorrencias_ano.png}
+  \caption{Evolução dos eventos de furtos de cabo em Belo Horizonte, no período de 03/2018 a 05/2025.}
+  \fonte{Produção própria}
+  \label{fig:grafico_barras_ocorrencias_ano}
+\end{figure}
+
+Além disso, o simples incremento de dados à essa análise pode ocultar ou impedir a captura de mudanças, que embora possam parecer sutis, são importântes para a sua eficácia, tais como alterações na localização das concentrações do fenômeno e sazonalidades. Conforme conceitou Robinson \cite{Robinson1950}, ``falácia ecológica'' (\textit{``Ecological Fallacy''}) refere-se a um tipo de erro lógico que se pode cometer ao inferir comportamentos individuais a partir de estatísticas de dados agregados. Por sua vez, Weisburd \cite{Weisburd2015} sintetizou a importância da análise espacial por meio de \textit{hotspots}, ou pontos quentes, onde há concentração de crimes. Acrescenta-se, ainda, o efeito de deslocamento geográfico (\textit{displacement}) conceituado por Barr \cite{Barr1990}, que explorou as diferentes formas como o crime se move em resposta a ações de prevenção. A Figura representa esse deslocamento espacial.
+
+\begin{table}[h!]
+\centering
+  \begin{tabular}{|m{3cm}|m{3cm}|m{3cm}|m{3cm}|} % Define colunas com largura fixa
+    \hline
+    \includegraphics[width=3cm]{dados/images/mapa_20231_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20232_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20233_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20234_2.png} \\ \hline
+    \includegraphics[width=3cm]{dados/images/mapa_20241_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20242_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20243_2.png} & \includegraphics[width=3cm]{dados/images/mapa_20244_2.png} \\ \hline
+  \end{tabular}
+  \caption{Tabela com 8 imagens}
+  \label{tab:tabela_imagens}
+\end{table}
 
 \subsection{Relevância do Problema}
 

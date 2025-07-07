@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
     
 arquivo_base = "./base_tratada.csv"
 
@@ -15,18 +16,25 @@ def importar_dados(arquivo_base):
     except Exception as e:
         print(f"Erro ao ler o arquivo: {e}")
         return None
-'''
+
 def grafico_barras_ano(dados):
     ocorrencias_ano = dados['ano'].value_counts().sort_index()
-    plt.figure(figsize=(10, 6))
-    ocorrencias_ano.plot(kind='bar', color='darkgray')
-    plt.title('Ocorrências de furto de cabos por Ano')
+    x = ocorrencias_ano.index
+    y = ocorrencias_ano.values
+    coeficientes = np.polyfit(x, y, 1)
+    polinomio = np.poly1d(coeficientes)
+    y_tendencia = polinomio(x)
+    plt.figure(figsize=(12, 7))
+    plt.bar(ocorrencias_ano.index, ocorrencias_ano.values, color='skyblue', label='Eventos')
+    plt.plot(x, y_tendencia, color='darkorange', linestyle='--', linewidth=2, label='Linha de Tendência')
+    plt.title('Eventos de furto de cabos por Ano')
     plt.xlabel('Ano')
-    plt.ylabel('Número de Ocorrências')
+    plt.ylabel('Número de eventos')
     plt.xticks(rotation=45)
-    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.grid(axis='y', linestyle='--')
     for index, value in enumerate(ocorrencias_ano):
-        plt.text(index, value + 50, str(value), ha='center', va='bottom')
+        plt.text(x[index], value + 50, str(value), ha='center')
+    plt.legend()
     plt.tight_layout()
     plt.savefig('../dados/images/grafico_barras_ocorrencias_ano.png')
 '''
@@ -47,14 +55,14 @@ def grafico_barras_trimestre_ano(dados):
         ax.bar_label(container, label_type='edge', fontsize=9, padding=3)
     fig.tight_layout()
     fig.savefig('../dados/images/grafico_barras_ocorrencias_trimestre_ano.png')
-
+'''
 def main():
     
     # Ler dados csv
     dados = importar_dados(arquivo_base)
     # Tratar os dados
-    #grafico_barras_ano(dados)
-    grafico_barras_trimestre_ano(dados)
+    grafico_barras_ano(dados)
+    #grafico_barras_trimestre_ano(dados)
     
     dados = None
     

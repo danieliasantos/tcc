@@ -18,11 +18,6 @@ def importar_dados(arquivo_base):
         print(f"Erro ao ler o arquivo: {e}")
         return None
 
-"""
-    Função para tratar os dados de coordenadas do dicionário, removendo linhas e colunas e adicionando geometria do QGIS.
-    Entrada: dataframe de ocorrências 'dados'
-    Retorno: dataframe com as coordenadas tratadas.
-"""
 def tratar_dados(dados):
     try:    
         # Ordenar os dados por data
@@ -50,15 +45,7 @@ def tratar_dados(dados):
     except Exception as e:
         print(f"Erro ao tratar os dados: {e}")
         return None
-    
-"""
-    Função para criar pontos com as coordenadas geográficas para viabilizar o processamento
-    Entrada: dicionário de dataframes com as colunas Longitude e Latitude
-    Função: Cria a coluna Geometry, usando a biblioteca GeoDataFrame, com pontos XY a partir das colunas Longitude e Latitude. 
-            Remove as colunas Longitude e Latitude.
-            Remove linhas em que não foi possível criar os pontos geométricos
-    Saída: dataframe com a nova coluna Geometry
-"""
+
 def converter_geopandas(dados):
     # Adicionar coluna de geometria
     dados['Geometry'] = gpd.GeoDataFrame(geometry=gpd.points_from_xy(dados['longitude'], dados['latitude']))
@@ -67,7 +54,25 @@ def converter_geopandas(dados):
     # Remover todas as linhas em que a conversao nao foi possivel
     dados.drop(dados[dados['Geometry'] == None].index, inplace = True)
     dados.drop(dados[dados['Geometry'].astype(str) == "POINT EMPTY"].index, inplace = True)
-
+'''
+def tratar_e_separar_trimestre(df):
+    try:
+        anos_desejados = [2023, 2024]
+        df_filtrado = df[df['ano'].isin(anos_desejados)].copy()
+        df_filtrado['trimestre'] = df_filtrado['trimestre_ano'].apply(lambda x: int(x.split('/')[0]))
+        for ano in anos_desejados:
+            for trimestre in range(1, 5):
+                df_trimestre = df_filtrado[(df_filtrado['ano'] == ano) & (df_filtrado['trimestre'] == trimestre)]
+                if not df_trimestre.empty:
+                    nome_arquivo_saida = f"ocorrencias_{ano}_trimestre_{trimestre}.csv"
+                    df_trimestre.to_csv(nome_arquivo_saida, sep=';', index=False)
+                else:
+                    print(f"Sem dados para {ano}, trimestre {trimestre}.")        
+    except FileNotFoundError:
+        print(f"Arquivo '{caminho_arquivo_entrada}' não encontrado.")
+    except Exception as e:
+        print(f"Erro desconhecido: {e}")
+'''
 def main():
     
     # Ler dados de Excel
@@ -76,6 +81,8 @@ def main():
     tratar_dados(dados)
     #Criar pontos com as coordenadas geográficas
     converter_geopandas(dados)
+    #tratar_e_separar_trimestre(dados)
+    
     # Exportar camadas para CSV
     dados.to_csv("base_tratada.csv", sep=";", index=False, encoding='utf-8')
     
