@@ -1,76 +1,68 @@
-This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tcc.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
 The style file: abntex2-alf.bst
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
-I was expecting a `,' or a `}'---line 43 of file bibliografia.bib
- :   
- :   pages={308}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 146 of file bibliografia.bib
- :  
- :  pages={6},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
-| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
 You've used 8 entries,
             6714 wiz_defined-function locations,
-            1213 strings with 9582 characters,
-and the built_in function-call counts, 3046 in all, are:
-= -- 315
+            1213 strings with 9617 characters,
+and the built_in function-call counts, 4003 in all, are:
+= -- 469
 > -- 17
-< -- 2
-+ -- 57
+< -- 51
++ -- 106
 - -- 6
-* -- 131
-:= -- 388
-add.period$ -- 4
+* -- 183
+:= -- 492
+add.period$ -- 5
 call.type$ -- 10
 change.case$ -- 29
 chr.to.int$ -- 9
 cite$ -- 1
-duplicate$ -- 69
-empty$ -- 387
+duplicate$ -- 214
+empty$ -- 388
 format.name$ -- 23
-if$ -- 824
+if$ -- 980
 int.to.chr$ -- 6
 int.to.str$ -- 1
 missing$ -- 92
 newline$ -- 12
 num.names$ -- 5
-pop$ -- 73
+pop$ -- 74
 preamble$ -- 1
 purify$ -- 24
 quote$ -- 0
-skip$ -- 412
+skip$ -- 556
 stack$ -- 1
-substring$ -- 97
-swap$ -- 19
-text.length$ -- 0
+substring$ -- 147
+swap$ -- 67
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 8
+while$ -- 9
 width$ -- 0
-write$ -- 23
-(There were 2 error messages)
+write$ -- 24
