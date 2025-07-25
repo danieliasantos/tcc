@@ -24,7 +24,7 @@ A atividade de monitoramento das câmeras, ou seja, a visualização das suas im
 
 São diversos os tipos de problemas públicos monitorados, tais como a deposição clandestina de lixo ou inservíveis em locais impróprios, animais de grande porte soltos em via pública, pichação, depredação, acidentes de trânsito, invasão de áreas protegidas e furtos de cabos, entre outros.
 
-Para tornar o serviço mais eficiente, o COP-BH desenvolveu um processo de análise de dados sobre problemas públicos para elaborar um roteiro de monitoramento, que sugere os problemas que devem ser monitorados, os períodos de maior relevância para executar o monitoramento e quais as câmeras deveriam ser monitoradas. 
+Para tornar o serviço mais eficiente, o COP-BH desenvolveu um processo de análise de dados sobre problemas públicos para elaborar um roteiro de monitoramento, que sugere os problemas que devem ser monitorados, os períodos de maior relevância para executar o monitoramento e quais as câmeras deveriam ser monitoradas.
 
 A partir deste roteiro, as equipes de monitoramento teriam um guia de referência que poderia aprimorar o seu trabalho no sentido da eficiência -- pois conheceriam as câmeras deveriam priorizar no monitoramento e quando deveriam ser monitoradas, e da eficácia -- pois isso poderia aumentar a probabilidade de visualizar algum problema público durante o monitoramento.
 
@@ -52,7 +52,7 @@ Atualmente, o COP-BH elabora o roteiro de monitoramento agrupando as ocorrência
   \label{fig:mapa_roteiro}
 \end{figure}
 
-Contudo, a análise de dados agregados, na forma como é feita, pode levar a interpretações incorretas. Como se poderá verificar na Figura \ref{fig:grafico_barras_ocorrencias_ano}, que demonstra a evolução dos eventos de furtos de cabo nos últimos anos, houve um aumento abrupto ocorrido do ano de 2022 para o ano de 2023, devido ao acréscimo de dados das operadoras Claro, Vivo e V.tal. Conquanto haja uma aparente e relativa estabilização do ano de 2023 para 2024, não se pode extrapolar projetando a linha de tendência para o ano de 2025. A regressão linear, ao representar apenas a tendência média, é inerentemente limitada para modelar mudanças bruscas de comportamento, como a ocorrida de 2022 para 2023. 
+Contudo, a análise de dados agregados, na forma como é feita, pode levar a interpretações incorretas. Como se poderá verificar na Figura \ref{fig:grafico_barras_ocorrencias_ano}, que demonstra a evolução dos eventos de furtos de cabo nos últimos anos, houve um aumento abrupto ocorrido do ano de 2022 para o ano de 2023, devido ao acréscimo de dados das operadoras Claro, Vivo e V.tal. Conquanto haja uma aparente e relativa estabilização do ano de 2023 para 2024, não se pode extrapolar projetando a linha de tendência para o ano de 2025. A regressão linear, ao representar apenas a tendência média, é inerentemente limitada para modelar mudanças bruscas de comportamento, como a ocorrida de 2022 para 2023.
 
 Essa limitação é um problema bem documentado na literatura estatística, pois a inclinação do modelo pode ser artificialmente influenciada, mascarando a verdadeira natureza dos dados e novos padrões de comportamento, conforme estabeleceu \cite{Anscombe1973}. Além disso, conforme \cite{Gujarati2011}, ``mudanças estruturais'' nos dados, como a ocorrida no dataset, invalidam a suposição de os parâmetros seriam constantes ao longo do tempo, o que é fundamental para um modelo de regressão único.
 
@@ -65,11 +65,11 @@ Essa limitação é um problema bem documentado na literatura estatística, pois
   \label{fig:grafico_barras_ocorrencias_ano}
 \end{figure}
 
-Além disso, o simples incremento de novas observações ao conjunto de dados pode ocultar ou impedir a captura de alterações e mudanças, que embora possam parecer sutis, são de fundamental importância para a eficácia da análise, tais como alterações na localização das concentrações do fenômeno e sazonalidades. 
+Além disso, o simples incremento de novas observações ao conjunto de dados pode ocultar ou impedir a captura de alterações e mudanças, que embora possam parecer sutis, são de fundamental importância para a eficácia da análise, tais como alterações na localização das concentrações do fenômeno e sazonalidades.
 
 Conforme concluiu Robinson \cite{Robinson1950}, erros podem ser cometidos, ou conclusões equivocadas podem ser obtidas ao se inferir comportamentos individuais a partir de estatísticas de dados agregados, a chamada ``falácia ecológica'' (\textit{``Ecological Fallacy''}). Seu estudo estabeleceu formalmente o problema, mostrando como correlações em nível de grupo (estados, cidades, por exemplo) podem ser completamente diferentes ou até opostas às correlações em nível individual.
 
-Por sua vez, Weisburd \cite{Weisburd2015} complementou este entendimento, ao argumentar pela necessidade de ir além da análise de dados agregados, e buscar padrões espaciais por meio de \textit{hotspots}, ou pontos quentes, onde há concentração de crimes. 
+Por sua vez, Weisburd \cite{Weisburd2015} complementou este entendimento, ao argumentar pela necessidade de ir além da análise de dados agregados, e buscar padrões espaciais por meio de \textit{hotspots}, ou pontos quentes, onde há concentração de crimes.
 
 Acrescenta-se, ainda, o efeito de deslocamento geográfico (\textit{``displacement''}) conceituado por Barr \cite{Barr1990}, que explorou as diferentes formas como o crime se move em resposta a ações de prevenção. As figuras apresentadas na Tabela \ref{tab:tabela_mapas} representam, empiricamente, esse deslocamento espacial dos eventos de furto de cabo em Belo Horizonte, além de indicar as diferentes concentrações dos eventos no tempo. Para fins deste comparativo foram considerados apenas os anos de 2023 e 2024, por serem os anos em que há maior volume de dados no dataset.
 
@@ -137,23 +137,23 @@ Estes fatos corroboram o entendimento de que o método atualmente utilizado pelo
 
 A atividade de monitoramento é realizada sob a perspectiva da prevenção e pronta resposta à ocorrência de crimes, e nesse contexto o crime de furto de cabos. Esse crime tem diversas consequências negativas, tanto econômicas quanto sociais.
 
-Do ponto de vista social e comunitário, podemos citar diversos problemas que o furto de cabos proporcionam à população em geral, tais como a interrupção de serviços de água, luz, acesso à Internet, serviços de saúde, e transtornos nos sistemas de tráfego e transporte público da cidade  (\citenum{Cemig}, \citenum{OGlobo}, \citenum{R7}, \citenum{OTempoA}, \citenum{OTempoB} e \citenum{HojeEmDia}).  
+Do ponto de vista social e comunitário, podemos citar diversos problemas que o furto de cabos proporcionam à população em geral, tais como a interrupção de serviços de água, luz, acesso à Internet, serviços de saúde, e transtornos nos sistemas de tráfego e transporte público da cidade  (\citenum{Cemig}, \citenum{OGlobo}, \citenum{R7}, \citenum{OTempoA}, \citenum{OTempoB} e \citenum{HojeEmDia}).
 
 Além disso, há também o impacto econômico, pois o restabelecimento destes serviços demanda o gasto com reparos na infraestrutura de rede elétrica, de telefonia ou de dados, seja pela Administração Pública ou por Concessionárias (\citenum{EstadoDeMinasB}). Pequenos comerciantes e prestadores de serviços também sofrem impactos econômicos decorrentes da interrupção destes serviços essenciais ao funcionamento dos seus estabelecimentos (\citenum{OTempoB}).
 
-Por fim, citam-se os riscos à integridade física dos próprios cometedores deste crime estão expostos, pois podem ser eletrocutados ao manipular cabos e fios de alta tensão, sem as devidas proteções, ou sofrer quedas de altura, ao subir em postes sem equipamentos próprios para isso (\citenum{EstadoDeMinas}). 
+Por fim, citam-se os riscos à integridade física dos próprios cometedores deste crime estão expostos, pois podem ser eletrocutados ao manipular cabos e fios de alta tensão, sem as devidas proteções, ou sofrer quedas de altura, ao subir em postes sem equipamentos próprios para isso (\citenum{EstadoDeMinas}).
 
 Portanto, pode-se perceber que o furto de cabos é um problema público importante, causador de diversos transtornos, e que no âmbito do COP-BH é enfrentado por meio do monitoramento por câmeras e correspondente pronta resposta. Neste sentido, ao buscar o aprimoramento da análise de dados em subsídio ao monitoramento inteligente, este trabalho se propõe a contribuir com o enfrentamento ao furto de cabos, que atinge a diversas cidades brasileiras.
 
 \subsection{Justificativa}
 
-O furto de cabos é um problema é reconhecidamente importante e já existem esforços para resolvê-lo. A própria existência de um processo de trabalho no COP-BH que objetiva a elaboração de um roteiro de monitoramento de furtos de cabos já justifica a importância do tema, pois demonstra que a Instituição reconhece o impacto nocivo à cidade, e busca ativamente otimizar a vigilância. 
+O furto de cabos é um problema é reconhecidamente importante e já existem esforços para resolvê-lo. A própria existência de um processo de trabalho no COP-BH que objetiva a elaboração de um roteiro de monitoramento de furtos de cabos já justifica a importância do tema, pois demonstra que a Instituição reconhece o impacto nocivo à cidade, e busca ativamente otimizar a vigilância.
 
 Contudo, a abordagem atual possui lacunas críticas que limitam sua eficácia. A metodologia atual, baseada na agregação de todo o histórico de dados em um único mapa de calor estático, se mostra vulnerável a falácias estatísticas, como a falácia ecológica. Ao tratar dados de anos diferentes com o mesmo peso, o método mascara tendências recentes, sazonalidades e, crucialmente, o deslocamento geográfico do crime. Conforme o dataset utilizado, um hotspot de 2022 pode não ter relevância para o monitoramento hoje, mas continua influenciando o mapa de calor atual, diluindo a importância de novos focos e enviesando a compreensão da movimentação do crime.
 
 Tal como já demonstrado, o furto de cabos não é estático, ele se adapta às ações de repressão e resposta. Assim, esse trabalho se justifica pela necessidade de que a análise dos dados seja, também, dinâmica e adaptativa. É preciso compreender para onde as concentrações de furto estão se movimentando, e quando são mais intensas.
 
-Portanto, é necessário desenvolver e implementar uma solução aprimorada e automatizada, que preencha as lacunas e insuficiências identificadas a fim de se obter melhores resultados. 
+Portanto, é necessário desenvolver e implementar uma solução aprimorada e automatizada, que preencha as lacunas e insuficiências identificadas a fim de se obter melhores resultados.
 
 Com isso, espera-se que, além do aperfeiçoamento na prevenção ao furto de cabos, o modelo metodológico e tecnológico proposto poderá ser adaptado para o combate a outros problemas públicos, fortalecendo a atuação do COP-BH, e contribuindo para uma gestão urbana mais inteligente e segura em Belo Horizonte.
 
@@ -162,7 +162,7 @@ Com isso, espera-se que, além do aperfeiçoamento na prevenção ao furto de ca
 Pode-se antecipar alguns desafios para o trabalho, sendo que alguns deles poderão ser contornados ou mitigados durante a própria execução. Outros, contudo, somente após a implementação, por meio de acompanhamento por um período de testes. Além disso há aqueles que dependerão de percepções externas do comportamento do fenômeno, por equipes operacionais na ponta. Estes últimos poderão ser melhor tratados em evoluções futuras deste trabalho. Tem-se:
 
 \begin{itemize}
-  \item{Padronização dos dados: tendo em vista as variadas fontes dos dados, a automatização deverá levar em conta a normalização dos dados, principalmente quanto ao georreferenciamento;} 
+  \item{Padronização dos dados: tendo em vista as variadas fontes dos dados, a automatização deverá levar em conta a normalização dos dados, principalmente quanto ao georreferenciamento;}
   \item{Classificação dos dados: a diversidade de fontes de dados pode ensejar, também, formas e padrões diferentes de classificação;}
   \item{Subnotificação dos dados: pode ocorrer que nem todos os registros de furtos de cabos sejam reportados, ou que sejam reportados com dados imprecisos de data e hora do fato e localização;}
   \item{Disponibilidade dos dados: o dinamismo da análise, com sua automatização, pode ser prejudicado se não houver um meio de capturar os dados de forma rápida;}
@@ -174,7 +174,7 @@ Pode-se antecipar alguns desafios para o trabalho, sendo que alguns deles poder�
 
 \subsection{Contribuição}
 
-Espera-se que este trabalho possa contribuir de múltiplas formas, e em diferentes esferas: 
+Espera-se que este trabalho possa contribuir de múltiplas formas, e em diferentes esferas:
 
 \begin{itemize}
   \item{Com o COP-BH, ao propor um aprimoramento do processo de trabalho de análise de dados e elaboração do roteiro de monitoramento, tornando-o mais dinâmico, preciso e eficiente;}
@@ -189,17 +189,52 @@ Espera-se que este trabalho possa contribuir de múltiplas formas, e em diferent
 \subsection{Objetivo Geral}
 \label{subsec:objgeral}
 % Objetivo Geral--------------------------------------------------------------------------
+Este trabalho tem por objetivo geral a melhoria do processo de análise de dados e elaboração do roteiro de monitoramento de furtos de cabos do COP-BH, com o intuito de torná-lo mais preparado a mudanças estruturais, devido à alterações na disponibilidade de dados, e mais preciso, a fim de aumentar a sua eficácia.
+
+Portanto, será desenvolvida e validada uma metodologia computacional automatizada para a análise dinâmica de hotspots de furto de cabos em Belo Horizonte, para aprimorar a geração de roteiros de monitoramento e subsidiar a tomada de decisão tática e operacional do COP-BH.
 %-----------------------------------------------------------------------------------------
 
 \subsection{Objetivos Específicos}
 \label{subsec:objespc}
 % Objetivos Específicos-------------------------------------------------------------------
+\begin{enumerate}
+  \item{Realizar um diagnóstico da metodologia de elaboração do roteiro de monitoramento e do dataset de furtos de cabos atualmente utilizados no COP-BH, para identificar limitações estatísticas e operacionais do processo de trabalho e na caracterização eficiente dos padrões do crime;}
+  \item{Desenvolver um modelo computacional para a detectar, de forma dinâmica e automatizada, \textit{hotspots} de furtos de cabo, que combine a análise de tendências temporais, a identificação de mudanças estruturais nos dados e a análise de concentração espacial das observações.}
+  \item{Implementar a metodologia desenvolvida em um protótipo capaz de processar as fontes de dados de forma automatizada e gerar, periodicamente, mapas e roteiros que darão suporte ao trabalho das equipes de monitoramento.}
+\end{enumerate}
 %-----------------------------------------------------------------------------------------
 
 \section{TRABALHOS CORRELATOS}
 \label{sec:estadoarte}
 % Estado da Arte--------------------------------------------------------------------------
 % (máximo de 2 páginas)
+A análise criminal moderna é um campo interdisciplinar que se consolidou na interseção entre a Criminologia, a Geografia, a Estatística e, mais recentemente, a Ciência da Computação. O seu desenvolvimento pode ser compreendido através de uma evolução de métodos que buscam responder a perguntas cada vez mais complexas sobre o fenômeno do crime: do "onde" ele acontece, para o "quando", e finalmente, para o "onde e quando acontecerá a seguir".
+
+A base teórica para a análise espacial do crime reside na Criminologia Ambiental, que postula que o crime não ocorre de forma aleatória no espaço, mas se concentra em locais específicos devido a uma confluência de oportunidades e rotinas sociais. O trabalho seminal de Weisburd (2015) formalizou este entendimento na "Lei da Concentração do Crime", demonstrando que uma pequena fração de "micro-lugares" é responsável pela maioria dos eventos criminais em uma cidade.
+
+Essa premissa impulsionou o desenvolvimento de técnicas de mapeamento criminal. A prática evoluiu dos tradicionais mapas de alfinetes para métodos computacionais mais sofisticados. Atualmente, a técnica de Estimativa de Densidade de Kernel (KDE) é amplamente adotada como um padrão da indústria para a visualização de hotspots — áreas de alta concentração criminal. O KDE gera mapas de calor visualmente intuitivos, que são ferramentas descritivas poderosas para entender a distribuição histórica do crime, sendo este o método atualmente em uso pelo COP-BH.
+
+A principal limitação dos mapas de KDE e de outras análises puramente espaciais é sua natureza estática. Eles fornecem uma fotografia agregada do passado, mas ignoram a dinâmica temporal do crime. A literatura acadêmica tem se dedicado extensivamente a superar essa limitação. O conceito de deslocamento do crime (crime displacement), explorado por Barr e Pease (1990), já indicava que ações de policiamento em um local poderiam simplesmente mover o problema para áreas adjacentes, evidenciando a necessidade de uma análise dinâmica.
+
+Para capturar a dimensão temporal, duas frentes de pesquisa se destacam:
+
+\begin{enumerate}
+  \item{Análise de Séries Temporais e Mudanças Estruturais: Confrontados com séries de dados que mudam seu comportamento ao longo do tempo, pesquisadores desenvolveram métodos de detecção de pontos de mudança (change point detection). A partir dos trabalhos pioneiros de Chow (1960) sobre quebras estruturais e das evoluções propostas por Bai e Perron (1998), tornou-se possível identificar estatisticamente os momentos em que uma tendência se altera, evitando conclusões equivocadas baseadas em modelos lineares únicos.}
+  \item{Análise Espaço-Temporal de Clusters: Para unir as dimensões espacial e temporal, métodos mais avançados foram propostos. A Estatística de Varredura Espaço-Temporal (Space-Time Scan Statistic), proposta por Kulldorff (1997), tornou-se um padrão-ouro para a identificação de clusters (agrupamentos) de eventos com significância estatística, permitindo detectar tanto hotspots persistentes quanto focos criminais emergentes. Trabalhos de revisão como o de Grubesic e Mack (2008) comparam essas técnicas avançadas, consolidando a importância de uma abordagem integrada.}
+\end{enumerate}
+
+A fronteira do estado da arte é a polícia preditiva (predictive policing), que utiliza aprendizado de máquina (Machine Learning) não apenas para descrever ou diagnosticar, mas para prever a probabilidade de crimes futuros. O espectro de modelos é vasto e inclui:
+
+\begin{enumerate}
+  \item{Modelos estatísticos avançados, como os processos pontuais auto-excitáveis, que modelam o "contágio" de crimes em áreas próximas (Mohler et al., 2011).}
+  \item{Algoritmos de Deep Learning, como redes neurais convolucionais e recorrentes, que são capazes de aprender padrões espaço-temporais complexos diretamente dos dados brutos (Wang et al., 2018; Rummens et al., 2023).}
+\end{enumerate}
+
+Contudo, a aplicação de ML neste contexto é acompanhada de um debate crítico intenso. Relatórios como o de Perry et al. (2013) e trabalhos como o de Catlett et al. (2019) alertam para os riscos significativos de viés algorítmico, a perpetuação de desigualdades, a falta de transparência de modelos "caixa-preta" e os desafios éticos de uma vigilância preditiva.
+
+Este trabalho se posiciona na intersecção entre a análise espaço-temporal dinâmica e a aplicação operacional em um órgão de segurança pública. O estado da arte revela uma lacuna significativa entre as práticas comuns de muitos órgãos (ainda baseadas em análises estáticas como o KDE) e a fronteira da pesquisa acadêmica (focada em complexos modelos preditivos de ML).
+
+Este projeto busca preencher essa lacuna ao não saltar diretamente para a previsão, mas ao focar em um passo anterior, fundamental e de alto impacto: a criação de uma ferramenta de diagnóstico e monitoramento dinâmico. A contribuição reside no desenvolvimento de uma metodologia automatizada que supera a análise estática tradicional, incorporando princípios de detecção de mudança e análise de clusters espaço-temporais, mas que permanece interpretável, robusta e diretamente aplicável à rotina operacional do COP-BH. Em outras palavras, o trabalho visa a elevar a prática atual a um patamar de análise dinâmica, provendo uma base sólida e confiável sobre a qual futuras iniciativas preditivas poderão ser construídas.
 %-----------------------------------------------------------------------------------------
 
 \section{METODOLOGIA/METODOLOGIA DE DESENVOLVIMENTO} % Escolher o nome mais adequado ao trabalho
