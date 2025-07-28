@@ -189,9 +189,13 @@ Espera-se que este trabalho possa contribuir de múltiplas formas, e em diferent
 \subsection{Objetivo Geral}
 \label{subsec:objgeral}
 % Objetivo Geral--------------------------------------------------------------------------
-Este trabalho tem por objetivo geral a melhoria do processo de análise de dados e elaboração do roteiro de monitoramento de furtos de cabos do COP-BH, com o intuito de torná-lo mais preparado a mudanças estruturais, devido à alterações na disponibilidade de dados, e mais preciso, a fim de aumentar a sua eficácia.
+Este trabalho tem por objetivo geral a melhoria do processo de análise de dados e elaboração do roteiro de monitoramento de furtos de cabos do COP-BH, com o intuito de torná-lo mais preparado a mudanças estruturais nos dados, e aprimorar a precisão no monitoramento, a fim de aumentar a sua eficácia.
 
-Portanto, será desenvolvida e validada uma metodologia computacional automatizada para a análise dinâmica de hotspots de furto de cabos em Belo Horizonte, para aprimorar a geração de roteiros de monitoramento e subsidiar a tomada de decisão tática e operacional do COP-BH.
+Portanto, será desenvolvida e validada uma metodologia computacional automatizada para a análise dinâmica de hotspots de furto de cabos em Belo Horizonte, em suporte às atividades de monitoramento e tomada de decisão tática e operacional do COP-BH.
+
+Cabe salientar que o escopo desse trabalho delimita-se na análise de padrões a partir dos dados que o COP-BH atualmente utiliza, com o mesmo dataset. Portanto não se aprofundará nas dimensões sociológicas, econômicas ou criminológicas que motivam o crime de furto de cabos. O objetivo não é explicar as causas primárias do fenômeno, mas sim a modelar seus padrões de ocorrência no espaço e no tempo de forma precisa e dinâmica.
+
+Dessa forma, a presente pesquisa se caracteriza como um trabalho de ciência de dados aplicada à segurança pública, com ênfase no desenvolvimento e na validação de uma nova abordagem metodológica computacional.
 %-----------------------------------------------------------------------------------------
 
 \subsection{Objetivos Específicos}
@@ -210,25 +214,27 @@ Portanto, será desenvolvida e validada uma metodologia computacional automatiza
 \label{sec:estadoarte}
 % Estado da Arte--------------------------------------------------------------------------
 % (máximo de 2 páginas)
-A análise criminal moderna é um campo interdisciplinar que se consolidou na interseção entre a Criminologia, a Geografia, a Estatística e, mais recentemente, a Ciência da Computação. O seu desenvolvimento pode ser compreendido através de uma evolução de métodos que buscam responder a perguntas cada vez mais complexas sobre o fenômeno do crime: do "onde" ele acontece, para o "quando", e finalmente, para o "onde e quando acontecerá a seguir".
+A análise criminal é um campo interdisciplinar que envolve ciências de diversas áreas do conhecimento, tais como Criminologia, Geografia, Estatística e, mais recentemente, a Computação. O seu propósito primordial pode ser entendido como a busca por respostas sobre quando, onde e porque o crime ocorreu, evoluindo para quando e onde ocorrerá, seja para prevenir ou reprimir a sua ocorrência.
 
-A base teórica para a análise espacial do crime reside na Criminologia Ambiental, que postula que o crime não ocorre de forma aleatória no espaço, mas se concentra em locais específicos devido a uma confluência de oportunidades e rotinas sociais. O trabalho seminal de Weisburd (2015) formalizou este entendimento na "Lei da Concentração do Crime", demonstrando que uma pequena fração de "micro-lugares" é responsável pela maioria dos eventos criminais em uma cidade.
+O trabalho de David Weisburd \cite{Weisburd2015} postulou que o crime não ocorre de forma aleatória no espaço, mas se concentra em locais específicos onde há uma convergência de oportunidades. Formalizou esse entendimento através da ``Lei da Concentração do Crime'', demonstrando que algumas pequenas regiões são responsáveis pela maioria dos eventos criminais em uma cidade.
 
-Essa premissa impulsionou o desenvolvimento de técnicas de mapeamento criminal. A prática evoluiu dos tradicionais mapas de alfinetes para métodos computacionais mais sofisticados. Atualmente, a técnica de Estimativa de Densidade de Kernel (KDE) é amplamente adotada como um padrão da indústria para a visualização de hotspots — áreas de alta concentração criminal. O KDE gera mapas de calor visualmente intuitivos, que são ferramentas descritivas poderosas para entender a distribuição histórica do crime, sendo este o método atualmente em uso pelo COP-BH.
+A partir dessa premissa, o mapeamento criminal passou a adotar técnicas mais sofisticadas, como a Estimativa de Densidade de Kernel (KDE), que é amplamente adotada como um padrão para a visualizar de hotspots -- áreas de alta concentração criminal -- visualmente intuitivos, que facilitam o entendimento da distribuição histórica do crime. Cheiney \cite{Chainey2008} comparou o uso de mapas temáticos por área, elipses espaciais, grades e o KDE, sendo este o que teve melhores resultados para a análise retrospectiva, baseada em dados históricos, estabelecendo-o como um padrão preditivo da ocorrência de crimes.
 
-A principal limitação dos mapas de KDE e de outras análises puramente espaciais é sua natureza estática. Eles fornecem uma fotografia agregada do passado, mas ignoram a dinâmica temporal do crime. A literatura acadêmica tem se dedicado extensivamente a superar essa limitação. O conceito de deslocamento do crime (crime displacement), explorado por Barr e Pease (1990), já indicava que ações de policiamento em um local poderiam simplesmente mover o problema para áreas adjacentes, evidenciando a necessidade de uma análise dinâmica.
+Contudo, como explorado por Barr e Pease \cite{Barr1990}, o crime se move no tempo e no espaço, e o KDE não tem a capacidade de se adaptar a mudanças bruscas e novas dinâmicas, por sua natureza estática. Portanto, esse trabalho busca uma melhoria dessa ferramenta, procurando incorporar a dinâmica do tempo à análise.
 
-Para capturar a dimensão temporal, duas frentes de pesquisa se destacam:
+Para capturar a dimensão temporal, e ainda as mudanças estruturais que podem ocorrer nos dados, podemos citar algumas referências principais:
 
 \begin{enumerate}
-  \item{Análise de Séries Temporais e Mudanças Estruturais: Confrontados com séries de dados que mudam seu comportamento ao longo do tempo, pesquisadores desenvolveram métodos de detecção de pontos de mudança (change point detection). A partir dos trabalhos pioneiros de Chow (1960) sobre quebras estruturais e das evoluções propostas por Bai e Perron (1998), tornou-se possível identificar estatisticamente os momentos em que uma tendência se altera, evitando conclusões equivocadas baseadas em modelos lineares únicos.}
-  \item{Análise Espaço-Temporal de Clusters: Para unir as dimensões espacial e temporal, métodos mais avançados foram propostos. A Estatística de Varredura Espaço-Temporal (Space-Time Scan Statistic), proposta por Kulldorff (1997), tornou-se um padrão-ouro para a identificação de clusters (agrupamentos) de eventos com significância estatística, permitindo detectar tanto hotspots persistentes quanto focos criminais emergentes. Trabalhos de revisão como o de Grubesic e Mack (2008) comparam essas técnicas avançadas, consolidando a importância de uma abordagem integrada.}
+  \item{Bai e Perron \cite{BaiAndPerron1998} desenvolveram um método de detecção de pontos de mudança (\textit{change point detection}), para análise de séries temporais e mudanças estruturais. A partir deste trabalho, tornou-se possível identificar estatisticamente os momentos em que uma tendência se altera, evitando conclusões equivocadas baseadas em regressões lineares únicas.}
+  \item{Kulldorff \cite{Kulldorff1997}, em seu trabalho ``A Spatial Scan Statistic'', estabeleceu o padrão para encontrar \textit{clusters} com significância estatística. Contudo, utiliza formas geométricas simples (círculos e elipses) para escanear o espaço. Isso significa que o hotspot pode não ser bem representado, se tiver uma forma mais complexa ou irregular, ao seguir o traçado de uma via pública, por exemplo.}
+  \item{A dimensão temporal foi integrada por Kulldorff et al. \cite{Kulldorff2005} em seu trabalho ``A space-time permutation scan statistic for disease outbreak detection''. O artigo aborda a aplicação da estatística de varredura no domínio espaço-temporal para detectar surtos de doenças em tempo real. O método propõe o conceito de cilindro (não mais as formas geométricas de duas dimensões) como janela de varredura, sendo o tempo a terceira dimensão. Seu objetivo é identificar \textit{clusters} em que o número de observações é maior que o esperado, e então detectar hotspots crônicos, ou surtos -- aumento repentino e localizado de eventos.}
+  \item{Han et al. \cite{Han2019} ampliaram o trabalho inicial de Kulldorff \cite{Kulldorff1997}, ao propor o uso dos próprios contornos de um mapa KDE como formas candidatas a \textit{clusters}. Para determinar essas regiões de forma irregular, é aplicado um teste da razão de verossimilhança para determinar se a quantidade de crimes observada na região é significativa, em relação à área externa.}
 \end{enumerate}
 
-A fronteira do estado da arte é a polícia preditiva (predictive policing), que utiliza aprendizado de máquina (Machine Learning) não apenas para descrever ou diagnosticar, mas para prever a probabilidade de crimes futuros. O espectro de modelos é vasto e inclui:
+Nesse contexto, o estado da arte é utilizar aprendizado de máquina (\textit{Machine Learning}) não apenas para descrever ou diagnosticar, mas para prever a probabilidade de crimes futuros. São diversas as abordagens existentes, e incluem:
 
 \begin{enumerate}
-  \item{Modelos estatísticos avançados, como os processos pontuais auto-excitáveis, que modelam o "contágio" de crimes em áreas próximas (Mohler et al., 2011).}
+  \item{Processos pontuais auto-excitáveis, modelos estatísticos avançados que modelam o ``contágio'' de crimes em áreas próximas \cite{Mohler2011}.}
   \item{Algoritmos de Deep Learning, como redes neurais convolucionais e recorrentes, que são capazes de aprender padrões espaço-temporais complexos diretamente dos dados brutos (Wang et al., 2018; Rummens et al., 2023).}
 \end{enumerate}
 
