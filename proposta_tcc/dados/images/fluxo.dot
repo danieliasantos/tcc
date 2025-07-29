@@ -1,0 +1,61 @@
+digraph G {
+    // Definições globais para a aparência do grafo
+    graph [fontname="Helvetica", fontsize=10, rankdir=TB, label="Fluxograma da Metodologia", labelloc=t];
+    node [shape=box, style="rounded", fontname="Helvetica", fontsize=10, penwidth=1];
+    edge [fontname="Helvetica", fontsize=9, penwidth=1];
+
+    // Fase 1
+    subgraph cluster_01 {
+        label = "Fase 1: Diagnóstico e AED";
+        A [label="Revisão Bibliográfica"];
+        B [label="Análise do Processo Atual do COP-BH"];
+        C [label="Pré-processamento e Análise\nExploratória dos Dados"];
+        A -> B -> C;
+    }
+
+    // Fase 2
+    subgraph cluster_02 {
+        label = "Fase 2: Modelagem e Desenvolvimento";
+        D [label="Definição da Janela Temporal de Análise"];
+        E [label="Aplicação do Método de Detecção de Hotspots\nex: Kernel Spatial Scan Statistic"];
+        F [label="Desenvolvimento da Análise de Dinâmica\n(Comparação entre janelas de tempo)"];
+        D -> E -> F;
+    }
+
+    // Fase 3
+    subgraph cluster_03 {
+        label = "Fase 3: Implementação do Protótipo";
+        G [label="Definição da Arquitetura e Tecnologias"];
+        H [label="Codificação da Ferramenta Automatizada"];
+        I [label="Geração de Relatórios e Mapas Visuais"];
+        G -> H -> I;
+    }
+
+    // Fase 4
+    subgraph cluster_04 {
+        label = "Fase 4: Validação e Análise";
+        J [label="Definição de Métricas\nex: Predictive Accuracy Index (PAI)"];
+        K [label="Execução de Testes Comparativos\n(Método Novo vs. Método Tradicional)"];
+        L [label="Análise dos Resultados\n(Quantitativos e Qualitativos)"];
+        J -> K -> L;
+    }
+
+    // Conclusão
+    subgraph cluster_05 {
+        label = "Conclusão";
+        M [label="Resultados Satisfatórios?", shape=diamond, width=3];
+        N [label="Análise Final e Escrita da\nDissertação/Tese"];
+        O [label="Fim", shape=ellipse, style=filled, fillcolor=lightgrey];
+        N -> O;
+    }
+    
+    // Conexões entre as fases
+    C -> D;
+    F -> G;
+    I -> J;
+    L -> M;
+
+    // Conexões da decisão (loop)
+    M -> N [label="Sim"];
+    M -> F [label="Não", style=dashed];
+}
