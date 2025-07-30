@@ -6,7 +6,7 @@
 \section{INTRODUÇÃO}
 \label{sec:introducao}
 % Introdução-------------------------------------------------------------------------------
-O Centro Integrado de Operações da Prefeitura de Belo Horizonte (COP-BH), é a entidade municipal responsável pela integração de informações e da atuação das Instituições envolvidas na resposta a problemas públicos de Belo Horizonte. Suas atividades se baseiam no \textit{Modelo de Gestão Integrada do COP-BH} \cite{ModeloGestaoCOP}, que expressa o seu posicionamento institucional e como promove a integração, alinhamento e harmonização dos processos de trabalho de diversas Instituições e Agências comprometidas com o cuidado da cidade.
+O Centro Integrado de Operações da Prefeitura de Belo Horizonte (COP-BH) é a entidade municipal responsável pela integração de informações e da atuação das Instituições envolvidas na resposta a problemas públicos de Belo Horizonte. Suas atividades se baseiam no \textit{Modelo de Gestão Integrada do COP-BH} \cite{ModeloGestaoCOP}, que expressa o seu posicionamento institucional e como promove a integração, alinhamento e harmonização dos processos de trabalho de diversas Instituições e Agências comprometidas com o cuidado da cidade.
 
 Pode ser classificado, segundo a Carta Brasileira para Cidades Inteligentes \cite{CartaCidades}, como um ``Centro de Gestão Integrada - GCI'', sendo este um ambiente estratégico que busca melhorar a eficiência e eficácia da prestação de serviços públicos ao aprimorar a proteção social e governança pública.
 
@@ -171,7 +171,6 @@ Pode-se antecipar alguns desafios para o trabalho, sendo que alguns deles poder�
   \item{Avaliação da efetividade: pode haver dificuldade em determinar isoladamente se (ou o quanto) o novo método foi eficaz na redução da observação do fenômeno.}
 \end{itemize}
 
-
 \subsection{Contribuição}
 
 Espera-se que este trabalho possa contribuir de múltiplas formas, e em diferentes esferas:
@@ -184,10 +183,10 @@ Espera-se que este trabalho possa contribuir de múltiplas formas, e em diferent
 
 \section{OBJETIVOS}
 \label{sec:objetivos}
-% (máximo de 1/2 página)
-
 \subsection{Objetivo Geral}
 \label{subsec:objgeral}
+%-----------------------------------------------------------------------------------------
+
 % Objetivo Geral--------------------------------------------------------------------------
 Este trabalho tem por objetivo geral a melhoria do processo de análise de dados e elaboração do roteiro de monitoramento de furtos de cabos do COP-BH, com o intuito de torná-lo mais preparado a mudanças estruturais nos dados, e aprimorar a precisão no monitoramento, a fim de aumentar a sua eficácia.
 
@@ -205,15 +204,13 @@ Dessa forma, a presente pesquisa se caracteriza como um trabalho de ciência de 
   \item{Realizar um diagnóstico da metodologia de elaboração do roteiro de monitoramento e do dataset de furtos de cabos atualmente utilizados no COP-BH, para identificar limitações estatísticas e operacionais do processo de trabalho e na caracterização eficiente dos padrões do crime;}
   \item{Desenvolver um modelo computacional para a detectar, de forma dinâmica e automatizada, \textit{hotspots} de furtos de cabo, que combine a análise de tendências temporais, a identificação de mudanças estruturais nos dados e a análise de concentração espacial das observações.}
   \item{Implementar a metodologia desenvolvida em um protótipo capaz de processar as fontes de dados de forma automatizada e gerar, periodicamente, mapas e roteiros que darão suporte ao trabalho das equipes de monitoramento.}
-  \item{Avaliar a eficiência do novo processo de trabalho de elaboração dos roteiros de monitoramento gerados pela ferramenta com o métido atual;}
-  \item{Avaliar a eficiência do novo método quanto à capacidade de identificar novas áreas de risco, e se adaptar a mudanças estruturais no dataset.}
+  \item{Avaliar a eficiência do novo método quanto à capacidade de identificar novas áreas de risco, e se adaptar a mudanças estruturais no dataset, bem como ao processo de trabalho de elaboração dos roteiros de monitoramento gerados pela ferramenta com o métido atual.}
 \end{enumerate}
 %-----------------------------------------------------------------------------------------
 
 \section{TRABALHOS CORRELATOS}
 \label{sec:estadoarte}
 % Estado da Arte--------------------------------------------------------------------------
-% (máximo de 2 páginas)
 A análise criminal é um campo interdisciplinar que envolve ciências de diversas áreas do conhecimento, tais como Criminologia, Geografia, Estatística e, mais recentemente, a Computação. O seu propósito primordial pode ser entendido como a busca por respostas sobre quando, onde e porque o crime ocorreu, evoluindo para quando e onde ocorrerá, seja para prevenir ou reprimir a sua ocorrência.
 
 O trabalho de David Weisburd \cite{Weisburd2015} postulou que o crime não ocorre de forma aleatória no espaço, mas se concentra em locais específicos onde há uma convergência de oportunidades. Formalizou esse entendimento através da ``Lei da Concentração do Crime'', demonstrando que algumas pequenas regiões são responsáveis pela maioria dos eventos criminais em uma cidade.
@@ -228,7 +225,7 @@ Para capturar a dimensão temporal, e ainda as mudanças estruturais que podem o
   \item{Bai e Perron \cite{BaiAndPerron1998} desenvolveram um método de detecção de pontos de mudança (\textit{change point detection}), para análise de séries temporais e mudanças estruturais. A partir deste trabalho, tornou-se possível identificar estatisticamente os momentos em que uma tendência se altera, evitando conclusões equivocadas baseadas em regressões lineares únicas.}
   \item{Kulldorff \cite{Kulldorff1997}, em seu trabalho ``A Spatial Scan Statistic'', estabeleceu o padrão para encontrar \textit{clusters} com significância estatística. Contudo, utiliza formas geométricas simples (círculos e elipses) para escanear o espaço. Isso significa que o hotspot pode não ser bem representado, se tiver uma forma mais complexa ou irregular, ao seguir o traçado de uma via pública, por exemplo.}
   \item{A dimensão temporal foi integrada por Kulldorff et al. \cite{Kulldorff2005} em seu trabalho ``A space-time permutation scan statistic for disease outbreak detection''. O artigo aborda a aplicação da estatística de varredura no domínio espaço-temporal para detectar surtos de doenças em tempo real. O método propõe o conceito de cilindro (não mais as formas geométricas de duas dimensões) como janela de varredura, sendo o tempo a terceira dimensão. Seu objetivo é identificar \textit{clusters} em que o número de observações é maior que o esperado, e então detectar hotspots crônicos, ou surtos -- aumento repentino e localizado de eventos.}
-  \item{Han et al. \cite{Han2019} ampliaram o trabalho inicial de Kulldorff \cite{Kulldorff1997}, ao propor o uso dos próprios contornos de um mapa KDE como formas candidatas a \textit{clusters}. Para determinar essas regiões de forma irregular, é aplicado um teste da razão de verossimilhança para determinar se a quantidade de crimes observada na região é significativa, em relação à área externa.}
+  \item{Han et al. \cite{Han2019} ampliaram o trabalho inicial de Kulldorff \cite{Kulldorff1997}, ao propor o uso do KSS (\textit{Kernel Spatial Scan Statistic}), a partir dos próprios contornos de um mapa KDE como formas candidatas a \textit{clusters}. Para determinar essas regiões de forma irregular, é aplicado um teste da razão de verossimilhança para determinar se a quantidade de crimes observada na região é significativa, em relação à área externa.}
 \end{enumerate}
 
 Nesse contexto, o estado da arte é utilizar aprendizado de máquina (\textit{Machine Learning}) não apenas para descrever ou diagnosticar, mas para prever a probabilidade de crimes futuros. São diversas as abordagens existentes, e incluem:
@@ -249,36 +246,101 @@ Este projeto busca preencher essa lacuna ao não saltar diretamente para a previ
 Sua contribuição reside no desenvolvimento de uma metodologia automatizada que supera a análise estática tradicional, incorporando princípios de detecção de mudança e análise de clusters espaço-temporais, mas que permanece interpretável, robusta e diretamente aplicável à rotina operacional do COP-BH. Em outras palavras, o trabalho visa a elevar a prática atual a um patamar de análise dinâmica, provendo uma base sólida e confiável sobre a qual futuras iniciativas preditivas poderão ser construídas.
 %-----------------------------------------------------------------------------------------
 
-\section{METODOLOGIA/METODOLOGIA DE DESENVOLVIMENTO} % Escolher o nome mais adequado ao trabalho
+\section{METODOLOGIA DE DESENVOLVIMENTO}
 \label{sec:metodologia}
 % Procedimentos Metodológicos/Metodologia-------------------------------------------------
+Este trabalho tem o objetivo final de propor a evolução da metodologia de análise de dados criminais (mais especificamente, o furto de cabos em Belo Horizonte) atualmente utilizada pelo COP-BH. Neste sentido, pode ser caracterizado como de natureza aplicada, com pesquisa quantitativa e qualitativa. O seu desenvolvimento foi estruturado em quatro fases sequenciais, demonstradas visualmente na Figura \ref{fig:fluxograma_metodologia_final}, e delineadas a seguir:
+
 \input{./dados/quadros/fluxo.tex}
-% (máximo de 2 páginas)
+
+\subsection{Fase 1: Análise de Dados}
+
+Corresponde ao Objetivo Específico 1, e consiste na compreensão do problema, do processo atual e do dataset.
+
+\begin{enumerate}
+  \item{Revisão bibliográfica: Identificação de trabalhos nas áreas de Análise Espaço-Temporal, métodos de criação de \textit{clusters} (KDE, Estatística de Varredura Espacial e Espaço-Temporal) e Detecção de pontos de mudança em dados.}
+  \item{Análise do processo atual do COP-BH: Análise qualitativa do processo utilizado no COP-BH, por meio da análise documental dos roteiros de monitoramento existentes e entrevistas não estruturadas com agentes operacionais, para identificação de desafios.} 
+  \item{Análise dos dados:}
+  \begin{itemize}
+    \item{Tratamento dos dados: consolidação, limpeza e tratamento do \textit{dataset}, incluindo a padronização de formatos, tratamento de coordenadas e criação de variáveis agrupáveis.}
+    \item{Análise temporal: plotagem da série histórica de ocorrências para identificar tendências, sazonalidades e mudanças.}
+    \item{Análise geoespacial: geração de mapas de pontos e de calor com o KDE, para estabelecer a base de comparação com a nova metodologia.}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Fase 2: Modelagem e desenvolvimento}
+
+Esta fase corresponde ao Objetivo Específico 2, e refere-se à parte central de revisão da metodologia atual do COP-BH.
+
+\begin{enumerate}
+  \item{Definição da unidade temporal de análise: estabelecimento da ``janela de tempo'' para a análise dinâmica. Por ausência de referência inicial, a princípio serão utilizados trimestres conforme demonstrado na Figura \ref{tab:tabela_mapas}, cabendo revisão posterior para uso de outras janelas (bimestrais, semestrais, etc.).}
+  \item{Desenvolvimento do modelo de detecção de hotspots:}
+  \begin{itemize}
+    \item{Será aplicado o método de detecção de \textit{clusters} KSS (\textit{Kernel Spatial Scan Statistic}), analisado por Han et al. \cite{Han2019}, em cada uma das janelas de tempo.}
+    \item{Para fins de comparação, a Estatística de Varredura Espaço-Temporal de Kulldorff \cite{Kulldorff2005} também será considerada.}
+  \end{itemize}
+  \item{Desenvolvimento da análise dinâmica: desenvolver um método para comparar os \textit{hotspots} significativos identificados em janelas de tempo sequenciais (ex.: 1oTri comparado ao 2oTri, e assim sucessivamente). Com isso, pretende-se identificar:}
+  \begin{itemize}
+    \item{Novos \textit{hotspots}, que não existiam nas janelas de tempo anteriores;}
+    \item{\textit{Hotspots} que deixaram de existir, ou se tornaram insignificantes estatisticamente;}
+    \item{Mudança na localização dos \textit{hotspots} no espaço;}
+    \item{Intensificação ou crescimento de um \textit{hotspot}.}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Fase 3: Implementação do protótipo de automatização}
+
+Refere-se ao terceiro Objetivo Específico, e tem por objetivo transformar a metodologia proposta em uma versão inicial de um aplicativo:
+
+\begin{enumerate}
+  \item{Definição da arquitetura: pipeline de processamento dos dados e saída dos resultados;}
+  \item{Definição das tecnologias utilizadas: a implementação inicial será feita em Python, utilizando bibliotecas padrão do ecossistema de ciência de dados:}
+  \begin{itemize}
+    \item{Geopandas e Shapely, para manipulação de dados geoespaciais;}
+    \item{Scikit-learn, para \textit{clustering} e métricas de avaliação;}
+    \item{Pysal, para análise espaciais; e}
+    \item{Matplotlib e Seaborn para geração dos mapas e gráficos.}
+  \end{itemize}
+  \item{Desenvolvimento da automatização do fluxo:}
+  \begin{itemize}
+    \item{Ingestão contínua de dados;}
+    \item{Execução da análise da Fase 2 para a janela de tempo corrente;}
+    \item{Geração de relatório visual contendo o mapa de \textit{hotspots} dinâmicos e mudanças detectadas.}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Fase 4: Comparação das metodologias}
+
+Refere-se ao quarto Objetivo Específico 4, e objetiva comprovar a eficácia da nova abordagem desenvolvida.
+
+\begin{enumerate}
+  \item{Definiçãoda métrica de avaliação: será utilizada a métrica padrão Índice de Acurácia Preditiva (\textit{Predictive Accuracy Index - PAI}) para avaliar os \textit{hotspots} identificados. O PAI é utilizado para medir a eficiência de um mapa de \textit{hotspots} em prever a localização de eventos futuros, conforme o trabalho de Chainey et al. \cite{Chainey2008}: \ref{eq:pai}.\\  }
+  \begin{equation} \label{eq:pai}
+    \begin{array}{rcl}
+      PAI = \frac{Ph}{Qh} \\ \\
+      \text{Onde } Ph \text{ é o \% de crimes que ocorrem dentro do \textit{hotspot}} \\
+      Qh \text{ é o \% da área total que é coberta pelo \textit{hotspot}} \\
+    \end{array}
+  \end{equation}
+  \item{Análise e comparação visual: serão gerados dois roteiros, A e B, sendo o roteiro A pelo método atual do COP-BH e o roteiro B pelo novo método desenvolvido:}
+  \begin{itemize}
+    \item{Roteiro A com o mapa de calor com KDE de todos os dados históricos até T1;}
+    \item{Roteiro B com o mapa de \textit{hotspots} gerado pela nova metodologia usando apenas os dados de T1;}
+    \item{Os dois roteiros serão comparados a um mapa que mostra os dados do trimestre seguinte (T2), para calcular e comparar os índices PAI.}
+  \end{itemize}
+\end{enumerate}
 %-----------------------------------------------------------------------------------------
 
-\section{CONCLUSÃO/CONSIDERAÇÕES FINAIS} % Escolher o nome mais adequado ao trabalho
+\section{CONSIDERAÇÕES FINAIS} % Escolher o nome mais adequado ao trabalho
 \label{sec:conclusao}
 % Conclusão/Considerações Finais----------------------------------------------------------
-% (máximo de ½ página)
-%-----------------------------------------------------------------------------------------
+Este trabalho se propõe a  analisar um fenômeno criminal dinâmico, como o furto de cabos, superando as limitações de uma abordagem estática. Busca implementar uma metodologia computacional automatizada capaz de identificar hotspots de forma dinâmica, analisando o surgimento, o deslocamento e a dissipação de áreas de risco ao longo do tempo. Além disso, utiliza uma avaliação retrospectiva utilizando uma métrica de desempenho reconhecida academicamente, o Índice de Acurácia Preditiva (PAI), ensejando assim, uma evolução no processo de trabalho do COP-BH, do qual já foram identificadas as insuficiências.
 
-\section{PLANEJAMENTO DO TRABALHO}
-\label{sec:planejamento}
-% Planejamento do Trabalho----------------------------------------------------------------
-% Esta seção não precisa ser editada, apenas edite o quadro 1 armazenada no diretório ".\dados\quadros"
-\input{./dados/quadros/quadro1}
+Ressalta-se que a validação realizada neste trabalho concentrou-se na eficácia metodológica em um ambiente controlado. Como desdobramento e evolução deste projeto, idealiza-se a realização de uma validação operacional, numa próxima etapa. Dessa forma, a validação operacional consistirá na implementação da ferramenta como um projeto-piloto na rotina do COP-BH, envolvendo o treinamento de agentes de monitoramento e a coleta de dados empíricos sobre seu impacto real na detecção de ocorrências, bem como a análise qualitativa da percepção e da utilidade da ferramenta junto aos agentes operacionais.
 
-\subsection{DA PROPOSTA AO PROJETO}
-%-----------------------------------------------------------------------------------------
+Adicionalmente, pretende-se agregar mais dados à análise, e com isso se espera aprimorar significativamente a robustez do modelo. Futuramente, pretende-se enriquecer a análise com dados sociológicos, como o mapeamento de áreas de permanência de moradores em situação de rua, e dados econômicos cruciais. Isso inclui a geolocalização de ferros-velhos e outros potenciais receptadores de cabos furtados, que modelam a cadeia de escoamento do delito, e a incorporação da série histórica da cotação do preço do cobre no mercado internacional, que funciona como um indicador macro do incentivo econômico para este tipo de crime.
 
-\section{RECURSOS NECESSÁRIOS}
-\label{sec:recursos}
-% Recursos Necessários--------------------------------------------------------------------
-%-----------------------------------------------------------------------------------------
+Por fim, talvez a aplicação futura mais interessante desta metodologia seja a sua integração com os sistemas gerenciamento de vídeo (\textit{Video Management System} - VMS) que o COP-BH utiliza para o monitoramento. A ideia é utilizar os resultados da análise e identificação de um hotspot emergente para ativar a execução automatizada de analíticos de vídeo específicos nas câmeras que cobrem a área de risco e somente durante a janela de tempo de maior probabilidade. São diversos os problemas públicos monitorados desta forma, para além do furto de cabos, tais como animais soltos em via pública, deposição clandestina de lixo, pixação, depredação, entre outros, que poderiam ser ativados de forma seletiva, provendo inteligência à atividade de monitoramento. A ocorrência de um evento detectado pelo analítico geraria, então, alertas operacionais prioritários para que ações de prevenção ou mitigação, como o empenho de um recurso operacional, pudessem ser tomadas no menor tempo possível.
 
-\section{HORÁRIO DE TRABALHO}
-\label{sec:horário}
-% Horário de Trabalho---------------------------------------------------------------------
-% Esta seção não precisa ser editada, apenas edite o quadro 2 armazenada no diretório ".\dados\quadros"
-\input{./dados/quadros/quadro2}
+Em suma, este trabalho busca uma evolução da solução metodológica atual em resposta a um problema operacional conhecido, que pode alicerçar evoluções futuras. A partir dele, espera-se prover proatividade e inteligência, baseadas em evidências, ao trabalho do COP-BH, em sua missão de cuidar da cidade de Belo Horizonte.
 %-----------------------------------------------------------------------------------------

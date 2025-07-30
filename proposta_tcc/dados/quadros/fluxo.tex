@@ -40,68 +40,56 @@
         }
     ]
 
-    % --- LINHA SUPERIOR (Fases 1, 2, 3) ---
+    % --- LINHA SUPERIOR (Fases 1, 2) ---
 
     % Fase 2 (Centro - Âncora principal)
-    \node (D) [process] {Definição da Janela Temporal de Análise};
-    \node (E) [process, below=of D] {Aplicação do Método de Detecção de Hotspots};% \\ \tiny\textit{(ex: KSS)}};
-    \node (F) [process, below=of E] {Desenvolvimento da Análise de Dinâmica};% \\ \tiny\textit{(Comparação entre janelas)}};
+    \node (D) [process] {Definição da unidade temporal de análise };
+    \node (E) [process, below=of D] {Desenvolvimento do modelo de detecção de hotspots};
+    \node (F) [process, below=of E] {Desenvolvimento da análise dinâmica};
 
     % Fase 1 (À Esquerda da Fase 2)
-    \node (A) [process, left=of D] {Revisão Bibliográfica};
-    \node (B) [process, below=of A] {Análise do Processo Atual do COP-BH};
-    \node (C) [process, below=of B] {Pré-processamento e AED};
-
-    % Fase 3 (À Direita da Fase 2)
-    \node (G) [process, right=of D] {Definição da Arquitetura e Tecnologias};
-    \node (H) [process, below=of G] {Codificação da Ferramenta Automatizada};
-    \node (I) [process, below=of H] {Geração de Relatórios e Mapas Visuais};
-
+    \node (A) [process, left=of D] {Revisão bibliográfica};
+    \node (B) [process, below=of A] {Análise do processo atual do COP-BH};
+    \node (C) [process, below=of B] {Análise dos dados};
 
     % --- BLOCOS INFERIORES ---
 
-    % Fase 4 (Abaixo das Fases 2 e 3, com maior espaçamento vertical)
-    \node (J) [process, below=of F, node distance=4cm, xshift=3cm, yshift=-2cm] {Definição de Métricas};% \\ \tiny\textit{(ex: PAI)}};
-    \node (K) [process, below=of J] {Execução de Testes Comparativos};% \\ \tiny\textit{(Novo vs. Tradicional)}};
-    \node (L) [process, below=of K] {Análise dos Resultados};% \\ \tiny\textit{(Quantitativos e Qualitativos)}};
+    % Fase 3 (Abaixo da Fase 3)
+    \node (G) [process, below=of F, yshift=-1cm] {Definição da arquitetura};
+    \node (H) [process, below=of G] {Definição das tecnologias utilizadas};
+    \node (I) [process, below=of H] {Desenvolvimento da automatização do fluxo};
 
-    % Conclusão (Abaixo das Fases 1 e 2, e à esquerda da Fase 4)
-    \node (M) [decision, left=of K] {Resultados Satisfatórios?};
-    \node (N) [process, below=of M] {Análise Final e Escrita da Dissertação/Tese};
-    \node (O) [terminator, below=of N, node distance=1cm] {Fim};
+    % Fase 4 (À esquerda da Fase 3)
+    \node (J) [process, left=of G] {Definiçãoda métrica de avaliação};
+    \node (K) [process, below=of J] {Análise e comparação visual};
+    \node (L) [process, below=of K] {Análise dos Resultados};
+
+    %\node (M) [terminator, left=of M, node distance=5cm] {Fim};
+    \node (M) [terminator, left=of L] {Fim};
     
     
     % --- AGRUPAMENTO DAS FASES (CAIXAS) ---
-    \node [fitbox={1: Diag. e AED}, fit=(A)(B)(C)] {};
+    \node [fitbox={1: Análise de Dados}, fit=(A)(B)(C)] {};
     \node [fitbox={2: Modelagem}, fit=(D)(E)(F)] {};
     \node [fitbox={3: Implementação}, fit=(G)(H)(I)] {};
     \node [fitbox={4: Validação}, fit=(J)(K)(L)] {};
-    \node [fitbox={Conclusão}, fit=(M)(N)(O)] {};
     
     
     % --- CONEXÕES (SETAS) ---
-    % Fluxo interno dos blocos
     \path [arrow] (A) edge (B);
     \path [arrow] (B) edge (C);
+    \draw [arrow] (C.east) to[out=-30, in=160, looseness=0.8] node[above, sloped] {} (D.west); % Fase 1 -> Fase 2
     \path [arrow] (D) edge (E);
     \path [arrow] (E) edge (F);
+    \draw [arrow] (F.east) to[out=-40, in=-350, looseness=0.8] node[above, sloped] {} (G.east); % Fase 2 -> Fase 3;
     \path [arrow] (G) edge (H);
     \path [arrow] (H) edge (I);
+    \draw [arrow] (I.west) to[out=-160, in=-350, looseness=0.8] node[right, sloped] {} (J.east); % Fase 3 -> Fase 4
     \path [arrow] (J) edge (K);
     \path [arrow] (K) edge (L);
-    \path [arrow] (M) edge node[right, font=\tiny] {Sim} (N);
-    \path [arrow] (N) edge (O);
+    \draw [arrow] (L.west) to[out=-180, in=-350, looseness=0.8] node[right, sloped] {} (M.east); % Fase 4 -> Conclusão
     
-    % Conexões curvadas entre as fases
-    \draw [arrow] (C.east) to[out=-30, in=160, looseness=0.8] node[above, sloped] {} (D.west); % Fase 1 -> Fase 2
-    \draw [arrow] (F.east) to[out=-30, in=160, looseness=0.8] node[above, sloped] {} (G.west); % Fase 2 -> Fase 3;
-    \draw [arrow] (I.south) to[out=-60, in=-340, looseness=1] node[right, sloped] {} (J.east);   % Fase 3 -> Fase 4
-    \draw [arrow] (L.west) to[out=60, in=-350, looseness=0.8] node[above, sloped] {} (M.east); % Fase 4 -> Conclusão
-    
-    % Seta do loop (Não)
-    \draw [arrow, dashed] (M.north) to[out=135, in=-90, looseness=0.8] node[above, sloped] {Não} (F.south);
-
     \end{tikzpicture}
-    \caption{Fluxograma da metodologia de pesquisa proposta (Layout Final Ajustado).}
+    \caption{Fluxograma da metodologia proposta de pesquisa.}
     \label{fig:fluxograma_metodologia_final}
 \end{figure}
