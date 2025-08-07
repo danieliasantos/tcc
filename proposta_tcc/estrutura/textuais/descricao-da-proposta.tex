@@ -314,12 +314,18 @@ Refere-se ao terceiro Objetivo Específico, e tem por objetivo transformar a met
 Refere-se ao quarto Objetivo Específico 4, e objetiva comprovar a eficácia da nova abordagem desenvolvida.
 
 \begin{enumerate}
-  \item{Definição da métrica de avaliação: será utilizada a métrica padrão Índice de Acurácia Preditiva (\textit{Predictive Accuracy Index - PAI}) para avaliar os \textit{hotspots} identificados. O PAI é utilizado para medir a eficiência de um mapa de \textit{hotspots} em prever a localização de eventos futuros, conforme o trabalho de Chainey et al. \cite{Chainey2008}: \ref{eq:pai}.\\  }
+  \item{Definição da métrica de avaliação: será utilizada a métrica padrão Índice de Acurácia Preditiva (\textit{Predictive Accuracy Index - PAI}) para avaliar os \textit{hotspots} identificados. O PAI é utilizado para medir a eficiência de um mapa de \textit{hotspots} em prever a localização de eventos futuros, introduzida por Chainey et al. \cite{Chainey2008}: \ref{eq:pai}.\\  }
   \begin{equation} \label{eq:pai}
     \begin{array}{rcl}
-      PAI = \frac{Ph}{Qh} \\ \\
-      \text{Onde } Ph \text{ é o \% de crimes que ocorrem dentro do \textit{hotspot}} \\
-      Qh \text{ é o \% da área total que é coberta pelo \textit{hotspot}} \\
+      \dfrac{\left( \dfrac{n}{N} \right) \times 100}{\left( \dfrac{a}{A} \right) \times 100} = \dfrac{HitRate}{AreaPercentage} = PAI \\ \\
+      \text{Onde } n \text{ -- número de crimes previstos para o \textit{hotspot}} \\
+      N \text{ -- número de crimes da área estudada} \\
+      a \text{ -- área onde se prevê a ocorrência de crimes} \\
+      A \text{ -- área total da região estudada} \\
+      %equação reduzida PAI
+      %PAI = \frac{Ph}{Qh} \\ \\
+      %\text{Onde } Ph \text{ é o \% de crimes que ocorrem dentro do \textit{hotspot}} \\
+      %Qh \text{ é o \% da área total que é coberta pelo \textit{hotspot}} \\
     \end{array}
   \end{equation}
   \item{Análise e comparação visual: serão gerados dois roteiros, A e B, sendo o roteiro A pelo método atual do COP-BH e o roteiro B pelo novo método desenvolvido:}
